@@ -4,22 +4,22 @@ namespace lp73.designPatterns.Visitor
 {
     public class SocieteMere : Societe
     {
-        protected IList<Societe> filiales = 
+        protected IList<Societe> Filiales = 
             new List<Societe>();
 
         public SocieteMere(string nom, string email, string
             adresse) : base(nom, email, adresse){}
 
-        public override void accepteVisiteur(Visiteur visiteur)
+        public override void AccepteVisiteur(IVisiteur visiteur)
         {
-            visiteur.visite(this);
-            foreach (Societe filiale in filiales)
-                filiale.accepteVisiteur(visiteur);
+            visiteur.Visite(this);
+            foreach (Societe filiale in Filiales)
+                filiale.AccepteVisiteur(visiteur);
         }
 
-        public override bool ajouteFiliale(Societe filiale)
+        public override bool AjouteFiliale(Societe filiale)
         {
-            filiales.Add(filiale);
+            Filiales.Add(filiale);
             return true;
         }
     }

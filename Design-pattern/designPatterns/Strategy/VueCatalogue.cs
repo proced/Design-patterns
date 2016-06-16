@@ -4,23 +4,23 @@ namespace lp73.designPatterns.Strategy
 {
     public class VueCatalogue
     {
-        protected IList<VueVehicule> contenu = 
+        protected IList<VueVehicule> Contenu = 
             new List<VueVehicule>();
-        protected DessinCatalogue dessin;
+        protected IDessinCatalogue Dessin;
 
-        public VueCatalogue(DessinCatalogue dessin)
+        public VueCatalogue(IDessinCatalogue dessin)
         {
-            contenu.Add(new VueVehicule("véhicule bon marché"));
-            contenu.Add(new VueVehicule("véhicule spacieux"));
-            contenu.Add(new VueVehicule("véhicule rapide"));
-            contenu.Add(new VueVehicule("véhicule confortable"));
-            contenu.Add(new VueVehicule("véhicule sportif"));
-            this.dessin = dessin;
+            Contenu.Add(new VueVehicule("véhicule bon marché"));
+            Contenu.Add(new VueVehicule("véhicule spacieux"));
+            Contenu.Add(new VueVehicule("véhicule rapide"));
+            Contenu.Add(new VueVehicule("véhicule confortable"));
+            Contenu.Add(new VueVehicule("véhicule sportif"));
+            this.Dessin = dessin;
         }
 
-        public void dessine()
+        public void Dessine()
         {
-            dessin.dessine(contenu);
+            Dessin.Dessine(Contenu);
         }
     }
 }

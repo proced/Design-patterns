@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace lp73.designPatterns.Strategy
 {
-    public class DessinTroisVehiculesLigne : DessinCatalogue
+    public class DessinTroisVehiculesLigne : IDessinCatalogue
     {
-        public void dessine(IList<VueVehicule> contenu)
+        public void Dessine(IList<VueVehicule> contenu)
         {
             int compteur;
             Console.WriteLine(
@@ -13,7 +13,7 @@ namespace lp73.designPatterns.Strategy
             compteur = 0;
             foreach (VueVehicule vueVehicule in contenu)
             {
-                vueVehicule.dessine();
+                vueVehicule.Dessine();
                 compteur++;
                 if (compteur == 3)
                 {

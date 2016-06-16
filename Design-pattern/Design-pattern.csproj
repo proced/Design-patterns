@@ -129,7 +129,7 @@
     <Compile Include="designPatterns\Mediator\Utilisateur.cs" />
     <Compile Include="designPatterns\Mediator\ZoneSaisie.cs" />
     <Compile Include="designPatterns\Memento\ChariotOption.cs" />
-    <Compile Include="designPatterns\Memento\Memento.cs" />
+    <Compile Include="designPatterns\Memento\IMemento.cs" />
     <Compile Include="designPatterns\Memento\MementoImpl.cs" />
     <Compile Include="designPatterns\Memento\OptionVehicule.cs" />
     <Compile Include="designPatterns\Memento\Utilisateur.cs" />
@@ -145,9 +145,9 @@
     <Compile Include="designPatterns\Multicast\MessageAbstrait.cs" />
     <Compile Include="designPatterns\Multicast\MessageCommercial.cs" />
     <Compile Include="designPatterns\Multicast\MessageGeneral.cs" />
-    <Compile Include="designPatterns\Multicast\RecepteurAbstrait.cs" />
-    <Compile Include="designPatterns\Multicast\RecepteurCommercial.cs" />
-    <Compile Include="designPatterns\Multicast\RecepteurGeneral.cs" />
+    <Compile Include="designPatterns\Multicast\IRecepteurAbstrait.cs" />
+    <Compile Include="designPatterns\Multicast\IRecepteurCommercial.cs" />
+    <Compile Include="designPatterns\Multicast\IRecepteurGeneral.cs" />
     <Compile Include="designPatterns\Observer\Observateur.cs" />
     <Compile Include="designPatterns\Observer\Sujet.cs" />
     <Compile Include="designPatterns\Observer\Utilisateur.cs" />
@@ -169,7 +169,7 @@
     <Compile Include="designPatterns\Prototype\LiasseClient.cs" />
     <Compile Include="designPatterns\Prototype\LiasseVierge.cs" />
     <Compile Include="designPatterns\Prototype\Utilisateur.cs" />
-    <Compile Include="designPatterns\Proxy\Animation.cs" />
+    <Compile Include="designPatterns\Proxy\IAnimation.cs" />
     <Compile Include="designPatterns\Proxy\AnimationProxy.cs" />
     <Compile Include="designPatterns\Proxy\Film.cs" />
     <Compile Include="designPatterns\Proxy\VueVehicule.cs" />
@@ -190,7 +190,7 @@
     <Compile Include="designPatterns\State\EtatCommande.cs" />
     <Compile Include="designPatterns\State\Produit.cs" />
     <Compile Include="designPatterns\State\Utilisateur.cs" />
-    <Compile Include="designPatterns\Strategy\DessinCatalogue.cs" />
+    <Compile Include="designPatterns\Strategy\IDessinCatalogue.cs" />
     <Compile Include="designPatterns\Strategy\DessinTroisVehiculesLigne.cs" />
     <Compile Include="designPatterns\Strategy\DessinUnVehiculeLigne.cs" />
     <Compile Include="designPatterns\Strategy\Utilisateur.cs" />
@@ -204,7 +204,7 @@
     <Compile Include="designPatterns\Visitor\SocieteMere.cs" />
     <Compile Include="designPatterns\Visitor\SocieteSansFiliale.cs" />
     <Compile Include="designPatterns\Visitor\Utilisateur.cs" />
-    <Compile Include="designPatterns\Visitor\Visiteur.cs" />
+    <Compile Include="designPatterns\Visitor\IVisiteur.cs" />
     <Compile Include="designPatterns\Visitor\VisiteurMailingCommercial.cs" />
     <Compile Include="Maxime\Maxime.cs" />
     <Compile Include="Program.cs" />

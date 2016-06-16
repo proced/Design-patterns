@@ -4,28 +4,28 @@ namespace lp73.designPatterns.TemplateMethod
 {
     public abstract class Commande
     {
-        protected double montantHt;
-        protected double montantTva;
-        protected double montantTtc;
+        protected double MontantHt;
+        protected double MontantTva;
+        protected double MontantTtc;
 
-        protected abstract void calculeTva();
+        protected abstract void CalculeTva();
 
-        public void calculeMontantTtc()
+        public void CalculeMontantTtc()
         {
-            this.calculeTva();
-            montantTtc = montantHt + montantTva;
+            this.CalculeTva();
+            MontantTtc = MontantHt + MontantTva;
         }
 
-        public void setMontantHt(double montantHt)
+        public void SetMontantHt(double montantHt)
         {
-            this.montantHt = montantHt;
+            this.MontantHt = montantHt;
         }
 
-        public void affiche()
+        public void Affiche()
         {
             Console.WriteLine("Commande");
-            Console.WriteLine("Montant HT " + montantHt);
-            Console.WriteLine("Montant TTC " + montantTtc);
+            Console.WriteLine("Montant HT " + MontantHt);
+            Console.WriteLine("Montant TTC " + MontantTtc);
         }
     }
 }

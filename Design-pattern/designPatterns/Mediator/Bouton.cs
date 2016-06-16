@@ -6,13 +6,13 @@ namespace lp73.designPatterns.Mediator
     {
         public Bouton(string nom) : base(nom){}
 
-        public override void saisie()
+        public override void Saisie()
         {
             Console.WriteLine("Désirez-vous activer le bouton " +
-                              nom + " ?");
+                              Nom + " ?");
             string reponse = Console.ReadLine();
             if (reponse == "oui")
-                this.modifie();
+                this.Modifie();
         }
     }
 }

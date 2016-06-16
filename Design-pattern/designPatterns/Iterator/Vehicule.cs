@@ -7,10 +7,10 @@ namespace lp73.designPatterns.Iterator
 
         public Vehicule(string description) : base(description){}
 
-        public void affiche()
+        public void Affiche()
         {
             Console.WriteLine("Description du véhicule : " +
-                              description);
+                              Description);
         }
     }
 }

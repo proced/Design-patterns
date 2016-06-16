@@ -6,9 +6,9 @@ namespace lp73.designPatterns.Iterator
 
         public CatalogueVehicule()
         {
-            contenu.Add(new Vehicule("véhicule bon marché"));
-            contenu.Add(new Vehicule("petit véhicule bon marché"));
-            contenu.Add(new Vehicule("véhicule grande qualité"));
+            Contenu.Add(new Vehicule("véhicule bon marché"));
+            Contenu.Add(new Vehicule("petit véhicule bon marché"));
+            Contenu.Add(new Vehicule("véhicule grande qualité"));
         }
     }
 }

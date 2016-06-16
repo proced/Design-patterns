@@ -2,24 +2,24 @@ using System;
 
 namespace lp73.designPatterns.Visitor
 {
-    public class VisiteurMailingCommercial : Visiteur
+    public class VisiteurMailingCommercial : IVisiteur
     {
-        public void visite(SocieteSansFiliale
+        public void Visite(SocieteSansFiliale
             societe)
         {
             Console.WriteLine("Envoi d'un email à " +
-                              societe.nom + " adresse : " + societe.email
+                              societe.Nom + " adresse : " + societe.Email
                               + " Proposition commerciale pour votre société");
         }
 
-        public void visite(SocieteMere societe)
+        public void Visite(SocieteMere societe)
         {
             Console.WriteLine("Envoi d'un email à " +
-                              societe.nom + " adresse : " + societe.email
+                              societe.Nom + " adresse : " + societe.Email
                               + " Proposition commerciale pour votre groupe");
             Console.WriteLine("Impression d'un courrier à " +
-                              societe.nom + " adresse : " +
-                              societe.adresse + 
+                              societe.Nom + " adresse : " +
+                              societe.Adresse + 
                               " Proposition commerciale pour votre groupe");
         }
     }

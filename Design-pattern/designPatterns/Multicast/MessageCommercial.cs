@@ -2,11 +2,11 @@
 {
     public class MessageCommercial : MessageAbstrait
     {
-        public string contenu { get; protected set; }
+        public string Contenu { get; protected set; }
 
         public MessageCommercial(string contenu)
         {
-            this.contenu = contenu;
+            this.Contenu = contenu;
         }
     }
 }

@@ -2,21 +2,21 @@ namespace lp73.designPatterns.Mediator
 {
     public abstract class Controle
     {
-        public string valeur { get; protected set; }
-        public Formulaire directeur { get;  set;}
-        public string nom { get; protected set; }
+        public string Valeur { get; protected set; }
+        public Formulaire Directeur { get;  set;}
+        public string Nom { get; protected set; }
 
-        public Controle(string nom)
+        protected Controle(string nom)
         {
-            this.valeur = "";
-            this.nom = nom;
+            this.Valeur = "";
+            this.Nom = nom;
         }
 
-        public abstract void saisie();
+        public abstract void Saisie();
 
-        protected void modifie()
+        protected void Modifie()
         {
-            directeur.controleModifie(this);
+            Directeur.ControleModifie(this);
         }
     }
 }

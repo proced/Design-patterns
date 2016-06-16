@@ -5,12 +5,12 @@ namespace lp73.designPatterns.PluggableFactory
     public class AutomobileEssence : Automobile
     {
 
-        public override void afficheCaracteristiques()
+        public override void AfficheCaracteristiques()
         {
             Console.WriteLine(
-                "Automobile à essence de modèle : " + modele +
-                " de couleur : " + couleur + " de puissance : " +
-                puissance + " d'espace : " + espace);
+                "Automobile à essence de modèle : " + Modele +
+                " de couleur : " + Couleur + " de puissance : " +
+                Puissance + " d'espace : " + Espace);
         }
     }
 }

@@ -5,20 +5,20 @@ namespace lp73.designPatterns.Multicast
     public abstract class ExpediteurAbstrait
         <TMessage, TRecepteur>
         where TMessage : MessageAbstrait
-        where TRecepteur : RecepteurAbstrait<TMessage>
+        where TRecepteur : IRecepteurAbstrait<TMessage>
     {
-        protected IList<TRecepteur> registre =
+        protected IList<TRecepteur> Registre =
             new List<TRecepteur>();
 
-        public void ajoute(TRecepteur recepteur)
+        public void Ajoute(TRecepteur recepteur)
         {
-            registre.Add(recepteur);
+            Registre.Add(recepteur);
         }
 
-        public void envoieMultiple(TMessage message)
+        public void EnvoieMultiple(TMessage message)
         {
-            foreach (TRecepteur recepteur in registre)
-                recepteur.recoit(message);
+            foreach (TRecepteur recepteur in Registre)
+                recepteur.Recoit(message);
         }
     }
 }

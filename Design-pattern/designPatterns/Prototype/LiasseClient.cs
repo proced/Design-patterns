@@ -6,28 +6,28 @@ namespace lp73.designPatterns.Prototype
     {
         public LiasseClient(string informations)
         {
-            documents = new List<Document>();
+            Documents = new List<Document>();
             LiasseVierge laLiasseVierge = LiasseVierge.Instance();
             IList<Document> documentsVierges =
-                laLiasseVierge.documents;
+                laLiasseVierge.Documents;
             foreach (Document document in documentsVierges)
             {
-                Document copieDocument = document.duplique();
-                copieDocument.remplit(informations);
-                documents.Add(copieDocument);
+                Document copieDocument = document.Duplique();
+                copieDocument.Remplit(informations);
+                Documents.Add(copieDocument);
             }
         }
 
-        public void affiche()
+        public void Affiche()
         {
-            foreach (Document document in documents)
-                document.affiche();
+            foreach (Document document in Documents)
+                document.Affiche();
         }
 
-        public void imprime()
+        public void Imprime()
         {
-            foreach (Document document in documents)
-                document.imprime();
+            foreach (Document document in Documents)
+                document.Imprime();
         }
     }
 }

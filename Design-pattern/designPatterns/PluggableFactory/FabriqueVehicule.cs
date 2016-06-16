@@ -2,34 +2,34 @@
 {
     public class FabriqueVehicule
     {
-        public Automobile prototypeAutomobile { get; set; }
-        public Scooter prototypeScooter { get; set; }
+        public Automobile PrototypeAutomobile { get; set; }
+        public Scooter PrototypeScooter { get; set; }
 
         public FabriqueVehicule()
         {
-            prototypeAutomobile = null;
-            prototypeScooter = null;
+            PrototypeAutomobile = null;
+            PrototypeScooter = null;
         }
 
         public FabriqueVehicule(Automobile prototypeAutomobile,
             Scooter prototypeScooter)
         {
-            this.prototypeAutomobile = prototypeAutomobile;
-            this.prototypeScooter = prototypeScooter;
+            this.PrototypeAutomobile = prototypeAutomobile;
+            this.PrototypeScooter = prototypeScooter;
         }
 
-        public Automobile creeAutomobile()
+        public Automobile CreeAutomobile()
         {
-            if (prototypeAutomobile == null)
+            if (PrototypeAutomobile == null)
                 return null;
-            return prototypeAutomobile.duplique();
+            return PrototypeAutomobile.Duplique();
         }
 
-        public Scooter creeScooter()
+        public Scooter CreeScooter()
         {
-            if (prototypeScooter == null)
+            if (PrototypeScooter == null)
                 return null;
-            return prototypeScooter.duplique();
+            return PrototypeScooter.Duplique();
         }
     }
 }

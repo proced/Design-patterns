@@ -1,17 +1,19 @@
+using System;
+
 namespace lp73.designPatterns.Iterator
 {
     public abstract class Element
     {
-        protected string description;
+        protected string Description;
 
-        public Element(string description)
+        protected Element(string description)
         {
-            this.description = description;
+            this.Description = description;
         }
 
-        public bool motCleValide(string motCle)
+        public bool MotCleValide(string motCle)
         {
-            return description.IndexOf(motCle) !=  -1;
+            return Description.IndexOf(motCle, StringComparison.Ordinal) !=  -1;
         }
     }
 }

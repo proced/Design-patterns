@@ -4,16 +4,16 @@ namespace lp73.designPatterns.State
 {
     public class Produit
     {
-        protected string nom;
+        protected string Nom;
 
         public Produit(string nom)
         {
-            this.nom = nom;
+            this.Nom = nom;
         }
 
-        public void affiche()
+        public void Affiche()
         {
-            Console.WriteLine("Produit : " + nom);
+            Console.WriteLine("Produit : " + Nom);
         }
     }
 }

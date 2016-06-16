@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace lp73.designPatterns.Strategy
 {
-    public class DessinUnVehiculeLigne : DessinCatalogue
+    public class DessinUnVehiculeLigne : IDessinCatalogue
     {
 
-        public void dessine(IList<VueVehicule> contenu)
+        public void Dessine(IList<VueVehicule> contenu)
         {
             Console.WriteLine(
                 "Dessine les véhicules avec un véhicule par ligne");
             foreach (VueVehicule vueVehicule in contenu)
             {
-                vueVehicule.dessine();
+                vueVehicule.Dessine();
                 Console.WriteLine();
             }
             Console.WriteLine();

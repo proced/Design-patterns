@@ -5,24 +5,24 @@ namespace lp73.designPatterns.State
         public CommandeEnCours(Commande commande) : base
             (commande){}
 
-        public override void ajouteProduit(Produit produit)
+        public override void AjouteProduit(Produit produit)
         {
-            commande.Produits.Add(produit);
+            Commande.Produits.Add(produit);
         }
 
-        public override void efface()
+        public override void Efface()
         {
-            commande.Produits.Clear();
+            Commande.Produits.Clear();
         }
 
-        public override void retireProduit(Produit produit)
+        public override void RetireProduit(Produit produit)
         {
-            commande.Produits.Remove(produit);
+            Commande.Produits.Remove(produit);
         }
 
-        public override EtatCommande etatSuivant()
+        public override EtatCommande EtatSuivant()
         {
-            return new CommandeValidee(commande);
+            return new CommandeValidee(Commande);
         }
     }
 }

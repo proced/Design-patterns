@@ -4,22 +4,22 @@ namespace lp73.designPatterns.Observer
 {
     public abstract class Sujet
     {
-        protected IList<Observateur> observateurs = 
+        protected IList<Observateur> Observateurs = 
             new List<Observateur>();
 
-        public void ajoute(Observateur observateur)
+        public void Ajoute(Observateur observateur)
         {
-            observateurs.Add(observateur);
+            Observateurs.Add(observateur);
         }
 
         public void retire(Observateur observateur)
         {
-            observateurs.Remove(observateur);
+            Observateurs.Remove(observateur);
         }
 
         public void notifie()
         {
-            foreach (Observateur observateur in observateurs)
+            foreach (Observateur observateur in Observateurs)
                 observateur.actualise();
         }
     }

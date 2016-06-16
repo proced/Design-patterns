@@ -2,18 +2,18 @@
 {
     public abstract class Scooter
     {
-        public string modele { get; set; }
-        public string couleur { get; set; }
-        protected int puissance { get; set; }
+        public string Modele { get; set; }
+        public string Couleur { get; set; }
+        protected int Puissance { get; set; }
 
-        public Scooter duplique()
+        public Scooter Duplique()
         {
             Scooter resultat;
             resultat = (Scooter)this.MemberwiseClone();
             return resultat;
         }
 
-        public abstract void afficheCaracteristiques();
+        public abstract void AfficheCaracteristiques();
     }
 }
 

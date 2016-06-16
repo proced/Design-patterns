@@ -2,21 +2,21 @@ namespace lp73.designPatterns.Singleton
 {
     public class TestVendeur
     {
-        //static void Main(string[] args)
-        //{
-        //    // initialisation du vendeur du système
-        //    Vendeur leVendeur = Vendeur.Instance();
-        //    leVendeur.nom = "Vendeur Auto";
-        //    leVendeur.adresse = "Paris";
-        //    leVendeur.email = "vendeur@vendeur.com";
-        //    // affichage du vendeur du système
-        //    affiche();
-        //}
+        public static void Singleton()
+        {
+            // initialisation du vendeur du système
+            Vendeur leVendeur = Vendeur.Instance();
+            leVendeur.Nom = "Vendeur Auto";
+            leVendeur.Adresse = "Paris";
+            leVendeur.Email = "vendeur@vendeur.com";
+            // affichage du vendeur du système
+            Affiche();
+        }
 
-        public static void affiche()
+        public static void Affiche()
         {
             Vendeur leVendeur = Vendeur.Instance();
-            leVendeur.affiche();
+            leVendeur.Affiche();
         }
     }
 }

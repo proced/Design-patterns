@@ -8,7 +8,7 @@ namespace lp73.designPatterns.Prototype
 
         private LiasseVierge()
         {
-            documents = new List<Document>();
+            Documents = new List<Document>();
         }
 
         public static LiasseVierge Instance()
@@ -18,14 +18,14 @@ namespace lp73.designPatterns.Prototype
             return _instance;
         }
 
-        public void ajoute(Document doc)
+        public void Ajoute(Document doc)
         {
-            documents.Add(doc);
+            Documents.Add(doc);
         }
 
-        public void retire(Document doc)
+        public void Retire(Document doc)
         {
-            documents.Remove(doc);
+            Documents.Remove(doc);
         }
     }
 }

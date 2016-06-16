@@ -13,38 +13,38 @@ namespace lp73.designPatterns.State
                 return produits;
             }
         }
-        protected EtatCommande etatCommande;
+        protected EtatCommande EtatCommande;
 
         public Commande()
         {
-            etatCommande = new CommandeEnCours(this);
+            EtatCommande = new CommandeEnCours(this);
         }
 
-        public void ajouteProduit(Produit produit)
+        public void AjouteProduit(Produit produit)
         {
-            etatCommande.ajouteProduit(produit);
+            EtatCommande.AjouteProduit(produit);
         }
 
-        public void retireProduit(Produit produit)
+        public void RetireProduit(Produit produit)
         {
-            etatCommande.retireProduit(produit);
+            EtatCommande.RetireProduit(produit);
         }
 
-        public void efface()
+        public void Efface()
         {
-            etatCommande.efface();
+            EtatCommande.Efface();
         }
 
-        public void etatSuivant()
+        public void EtatSuivant()
         {
-            etatCommande = etatCommande.etatSuivant();
+            EtatCommande = EtatCommande.EtatSuivant();
         }
 
-        public void affiche()
+        public void Affiche()
         {
             Console.WriteLine("Contenu de la commande");
             foreach (Produit produit in produits)
-                produit.affiche();
+                produit.Affiche();
             Console.WriteLine();
         }
     }

@@ -5,13 +5,13 @@ namespace lp73.designPatterns.State
         public CommandeLivree(Commande commande) : base(commande)
         {}
 
-        public override void ajouteProduit(Produit produit){}
+        public override void AjouteProduit(Produit produit){}
 
-        public override void efface(){}
+        public override void Efface(){}
 
-        public override void retireProduit(Produit produit){}
+        public override void RetireProduit(Produit produit){}
 
-        public override EtatCommande etatSuivant()
+        public override EtatCommande EtatSuivant()
         {
             return this;
         }

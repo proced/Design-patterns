@@ -5,12 +5,12 @@ namespace lp73.designPatterns.Visitor
         public SocieteSansFiliale(string nom, string email,
             string adresse) : base(nom, email, adresse){}
 
-        public override void accepteVisiteur(Visiteur visiteur)
+        public override void AccepteVisiteur(IVisiteur visiteur)
         {
-            visiteur.visite(this);
+            visiteur.Visite(this);
         }
 
-        public override bool ajouteFiliale(Societe filiale)
+        public override bool AjouteFiliale(Societe filiale)
         {
             return false;
         }

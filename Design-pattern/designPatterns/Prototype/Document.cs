@@ -2,21 +2,21 @@ namespace lp73.designPatterns.Prototype
 {
     public abstract class Document
     {
-        protected string contenu = "";
+        protected string Contenu = "";
 
-        public Document duplique()
+        public Document Duplique()
         {
             Document resultat;
             resultat = (Document)this.MemberwiseClone();
             return resultat;
         }
 
-        public void remplit(string informations)
+        public void Remplit(string informations)
         {
-            contenu = informations;
+            Contenu = informations;
         }
 
-        public abstract void imprime();
-        public abstract void affiche();
+        public abstract void Imprime();
+        public abstract void Affiche();
     }
 }

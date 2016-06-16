@@ -10,21 +10,21 @@ namespace lp73.designPatterns.Mediator
 
         public PopupMenu(string nom) : base(nom){}
 
-        public override void saisie()
+        public override void Saisie()
         {
-            Console.WriteLine("Saisie de : " + nom);
-            Console.WriteLine("Valeur actuelle : " + valeur);
+            Console.WriteLine("Saisie de : " + Nom);
+            Console.WriteLine("Valeur actuelle : " + Valeur);
             for (int index = 0; index < options.Count; index++)
                 Console.WriteLine("- " + index + " )" +
                                   options[index]);
             int choix = int.Parse(Console.ReadLine());
             if ((choix >= 0) && (choix < options.Count))
             {
-                bool change = (valeur != options[choix]);
+                bool change = (Valeur != options[choix]);
                 if (change)
                 {
-                    valeur = options[choix];
-                    this.modifie();
+                    Valeur = options[choix];
+                    this.Modifie();
                 }
             }
         }

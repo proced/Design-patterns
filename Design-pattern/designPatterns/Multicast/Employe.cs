@@ -2,21 +2,21 @@
 
 namespace lp73.designPatterns.Multicast
 {
-    public abstract class Employe : RecepteurGeneral
+    public abstract class Employe : IRecepteurGeneral
     {
-        protected string nom;
+        protected string Nom;
 
-        public Employe(string nom)
+        protected Employe(string nom)
         {
-            this.nom = nom;
+            this.Nom = nom;
         }
 
-        public void recoit(MessageGeneral message)
+        public void Recoit(MessageGeneral message)
         {
             Console.WriteLine("Message général");
-            Console.WriteLine("Nom : " + nom);
+            Console.WriteLine("Nom : " + Nom);
             Console.WriteLine("Message : ");
-            foreach (string ligne in message.contenu)
+            foreach (string ligne in message.Contenu)
                 Console.WriteLine(ligne);
         }
     }

@@ -2,21 +2,21 @@ using System;
 
 namespace lp73.designPatterns.Proxy
 {
-    public class Film : Animation
+    public class Film : IAnimation
     {
-        public void clic(){}
+        public void Clic(){}
 
-        public void dessine()
+        public void Dessine()
         {
             Console.WriteLine("Affichage du film");
         }
 
-        public void charge()
+        public void Charge()
         {
             Console.WriteLine("Chargement du film");
         }
 
-        public void joue()
+        public void Joue()
         {
             Console.WriteLine("Lecture du film");
         }

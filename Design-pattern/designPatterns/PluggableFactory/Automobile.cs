@@ -2,19 +2,19 @@
 {
     public abstract class Automobile
     {
-        public string modele { get; set; }
-        public string couleur { get; set; }
-        public int puissance { get; set; }
-        public double espace { get; set; }
+        public string Modele { get; set; }
+        public string Couleur { get; set; }
+        public int Puissance { get; set; }
+        public double Espace { get; set; }
 
-        public Automobile duplique()
+        public Automobile Duplique()
         {
             Automobile resultat;
             resultat = (Automobile)this.MemberwiseClone();
             return resultat;
         }
 
-        public abstract void afficheCaracteristiques();
+        public abstract void AfficheCaracteristiques();
     }
 }
 

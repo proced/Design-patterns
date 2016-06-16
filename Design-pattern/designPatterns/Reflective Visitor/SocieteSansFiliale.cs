@@ -5,7 +5,7 @@ namespace lp73.designPatterns.Reflective_Visitor
         public SocieteSansFiliale(string nom, string email,
             string adresse) : base(nom, email, adresse){}
 
-        public override bool ajouteFiliale(Societe filiale)
+        public override bool AjouteFiliale(Societe filiale)
         {
             return false;
         }

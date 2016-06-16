@@ -2,10 +2,10 @@ namespace lp73.designPatterns.Observer
 {
     public class Vehicule : Sujet
     {
-        protected string _description;
-        protected double _prix;
+        private string _description;
+        private double _prix;
 
-        public string description
+        public string Description
         {
             get
             {
@@ -18,7 +18,7 @@ namespace lp73.designPatterns.Observer
             }
         }
 
-        public double prix
+        public double Prix
         {
             get
             {

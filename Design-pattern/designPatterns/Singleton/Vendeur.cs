@@ -4,9 +4,9 @@ namespace lp73.designPatterns.Singleton
 {
     public class Vendeur
     {
-        public string nom { get; set; }
-        public string adresse { get; set; }
-        public string email { get; set; }
+        public string Nom { get; set; }
+        public string Adresse { get; set; }
+        public string Email { get; set; }
 
         private static Vendeur _instance = null;
 
@@ -19,11 +19,11 @@ namespace lp73.designPatterns.Singleton
             return _instance;
         }
 
-        public void affiche()
+        public void Affiche()
         {
-            Console.WriteLine("Nom : " + nom);
-            Console.WriteLine("Adresse : " + adresse);
-            Console.WriteLine("Email : " + email);
+            Console.WriteLine("Nom : " + Nom);
+            Console.WriteLine("Adresse : " + Adresse);
+            Console.WriteLine("Email : " + Email);
         }
 
     }

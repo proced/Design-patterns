@@ -9,16 +9,16 @@
         {
             MessageCommercial message = new MessageCommercial(
                 "Annonce nouvelle gamme");
-            expediteurCommercial.envoieMultiple(message);
+            expediteurCommercial.EnvoieMultiple(message);
             message = new MessageCommercial(
                 "Annonce suppression modèle");
-            expediteurCommercial.envoieMultiple(message);
+            expediteurCommercial.EnvoieMultiple(message);
         }
 
-        public void ajouteRecepteurCommercial
-            (RecepteurCommercial recepteur)
+        public void AjouteRecepteurCommercial
+            (IRecepteurCommercial recepteur)
         {
-            expediteurCommercial.ajoute(recepteur);
+            expediteurCommercial.Ajoute(recepteur);
         }
     }
 }

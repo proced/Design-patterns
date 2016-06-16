@@ -2,18 +2,18 @@ namespace lp73.designPatterns.TemplateMethod
 {
     public class Utilisateur
     {
-        //static void Main(string[] args)
-        //{
-        //    Commande commandeFrance = new CommandeFrance();
-        //    commandeFrance.setMontantHt(10000);
-        //    commandeFrance.calculeMontantTtc();
-        //    commandeFrance.affiche();
+        public static void TemplateMethod()
+        {
+            Commande commandeFrance = new CommandeFrance();
+            commandeFrance.SetMontantHt(10000);
+            commandeFrance.CalculeMontantTtc();
+            commandeFrance.Affiche();
 
 
-        //    Commande commandeLuxembourg = new CommandeLuxembourg();
-        //    commandeLuxembourg.setMontantHt(10000);
-        //    commandeLuxembourg.calculeMontantTtc();
-        //    commandeLuxembourg.affiche();
-        //}
+            Commande commandeLuxembourg = new CommandeLuxembourg();
+            commandeLuxembourg.SetMontantHt(10000);
+            commandeLuxembourg.CalculeMontantTtc();
+            commandeLuxembourg.Affiche();
+        }
     }
 }

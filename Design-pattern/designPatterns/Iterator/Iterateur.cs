@@ -5,35 +5,32 @@ namespace lp73.designPatterns.Iterator
     public abstract class Iterateur<TElement>
         where TElement : Element
     {
-        public string motCleRequete { protected get; set; }
-        protected int index;
-        public IList<TElement> contenu { protected get; set; }
+        public string MotCleRequete { protected get; set; }
+        protected int Index;
+        public IList<TElement> Contenu { protected get; set; }
 
 
-        public void debut()
+        public void Debut()
         {
-            index = 0;
-            int taille = contenu.Count;
-            while ((index < taille) && 
-                   (!contenu[index].motCleValide(motCleRequete)))
-                index++;
+            Index = 0;
+            int taille = Contenu.Count;
+            while ((Index < taille) && 
+                   (!Contenu[Index].MotCleValide(MotCleRequete)))
+                Index++;
         }
 
-        public void suivant()
+        public void Suivant()
         {
-            int taille = contenu.Count;
-            index++;
-            while ((index < taille) && 
-                   (!contenu[index].motCleValide(motCleRequete)))
-                index++;
+            int taille = Contenu.Count;
+            Index++;
+            while ((Index < taille) && 
+                   (!Contenu[Index].MotCleValide(MotCleRequete)))
+                Index++;
         }
 
-        public TElement item()
+        public TElement Item()
         {
-            if (index < contenu.Count)
-                return contenu[index];
-            else
-                return null;
+            return Index < Contenu.Count ? Contenu[Index] : null;
         }
     }
 }

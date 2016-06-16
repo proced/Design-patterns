@@ -2,19 +2,19 @@ namespace lp73.designPatterns.Visitor
 {
     public abstract class Societe
     {
-        public string nom { get; protected set; }
-        public string email { get; protected set; }
-        public string adresse { get; protected set; }
+        public string Nom { get; protected set; }
+        public string Email { get; protected set; }
+        public string Adresse { get; protected set; }
 
-        public Societe(string nom, string email, string adresse)
+        protected Societe(string nom, string email, string adresse)
         {
-            this.nom = nom;
-            this.email = email;
-            this.adresse = adresse;
+            this.Nom = nom;
+            this.Email = email;
+            this.Adresse = adresse;
         }
 
-        public abstract bool ajouteFiliale(Societe filiale);
+        public abstract bool AjouteFiliale(Societe filiale);
 
-        public abstract void accepteVisiteur(Visiteur visiteur);
+        public abstract void AccepteVisiteur(IVisiteur visiteur);
     }
 }

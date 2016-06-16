@@ -2,16 +2,16 @@ namespace lp73.designPatterns.State
 {
     public abstract class EtatCommande
     {
-        protected Commande commande;
+        protected Commande Commande;
 
         public EtatCommande(Commande commande)
         {
-            this.commande = commande;
+            this.Commande = commande;
         }
 
-        public abstract void ajouteProduit(Produit produit);
-        public abstract void efface();
-        public abstract void retireProduit(Produit produit);
-        public abstract EtatCommande etatSuivant();
+        public abstract void AjouteProduit(Produit produit);
+        public abstract void Efface();
+        public abstract void RetireProduit(Produit produit);
+        public abstract EtatCommande EtatSuivant();
     }
 }

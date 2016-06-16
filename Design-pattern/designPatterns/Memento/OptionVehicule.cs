@@ -5,29 +5,29 @@ namespace lp73.designPatterns.Memento
 {
     public class OptionVehicule
     {
-        protected string nom;
-        public IList<OptionVehicule> optionsIncompatibles
+        protected string Nom;
+        public IList<OptionVehicule> OptionsIncompatibles
         {get; protected set;}
 
         public OptionVehicule(string nom)
         {
-            optionsIncompatibles = new List<OptionVehicule>();
-            this.nom = nom;
+            OptionsIncompatibles = new List<OptionVehicule>();
+            this.Nom = nom;
         }
 
-        public void ajouteOptionIncompatible(OptionVehicule
+        public void AjouteOptionIncompatible(OptionVehicule
             optionIncompatible)
         {
-            if (!optionsIncompatibles.Contains(optionIncompatible))
+            if (!OptionsIncompatibles.Contains(optionIncompatible))
             {
-                optionsIncompatibles.Add(optionIncompatible);
-                optionIncompatible.ajouteOptionIncompatible(this);
+                OptionsIncompatibles.Add(optionIncompatible);
+                optionIncompatible.AjouteOptionIncompatible(this);
             }
         }
 
-        public void affiche()
+        public void Affiche()
         {
-            Console.WriteLine("option : " + nom);
+            Console.WriteLine("option : " + Nom);
         }
     }
 }

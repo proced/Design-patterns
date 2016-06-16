@@ -2,9 +2,9 @@ namespace lp73.designPatterns.TemplateMethod
 {
     public class CommandeLuxembourg : Commande
     {
-        protected override void calculeTva()
+        protected override void CalculeTva()
         {
-            montantTva = montantHt * 0.15;
+            MontantTva = MontantHt * 0.15;
         }
     }
 }

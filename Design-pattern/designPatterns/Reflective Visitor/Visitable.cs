@@ -1,6 +1,6 @@
 ﻿namespace lp73.designPatterns.Reflective_Visitor
 {
-    public interface Visitable
+    public interface IVisitable
     {
     }
 }

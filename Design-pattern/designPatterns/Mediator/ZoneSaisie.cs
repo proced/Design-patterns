@@ -6,11 +6,11 @@ namespace lp73.designPatterns.Mediator
     {
         public ZoneSaisie(string nom) : base(nom){}
 
-        public override void saisie()
+        public override void Saisie()
         {
-            Console.WriteLine("Saisie de : " + nom);
-            valeur = Console.ReadLine();
-            this.modifie();
+            Console.WriteLine("Saisie de : " + Nom);
+            Valeur = Console.ReadLine();
+            this.Modifie();
         }
     }
 }

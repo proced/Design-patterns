@@ -4,16 +4,16 @@ namespace lp73.designPatterns.Prototype
 {
     public class BonDeCommande : Document
     {
-        public override void affiche()
+        public override void Affiche()
         {
             Console.WriteLine("Affiche le bon de commande : " +
-                              contenu);
+                              Contenu);
         }
 
-        public override void imprime()
+        public override void Imprime()
         {
             Console.WriteLine("Imprime le bon de commande : " +
-                              contenu);
+                              Contenu);
         }
     }
 }

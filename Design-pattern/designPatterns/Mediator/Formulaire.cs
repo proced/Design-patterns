@@ -4,50 +4,50 @@ namespace lp73.designPatterns.Mediator
 {
     public class Formulaire
     {
-        protected IList<Controle> controles = 
+        protected IList<Controle> Controles = 
             new List<Controle>();
-        protected IList<Controle> controlesCoemprunteur =
+        protected IList<Controle> ControlesCoemprunteur =
             new List<Controle>();
-        public PopupMenu menuCoemprunteur { protected get; set; }
-        public Bouton boutonOK { protected get; set; }
-        protected bool enCours = true;
+        public PopupMenu MenuCoemprunteur { protected get; set; }
+        public Bouton BoutonOk { protected get; set; }
+        protected bool EnCours = true;
 
-        public void ajouteControle(Controle controle)
+        public void AjouteControle(Controle controle)
         {
-            controles.Add(controle);
-            controle.directeur = this;
+            Controles.Add(controle);
+            controle.Directeur = this;
         }
 
-        public void ajouteControleCoemprunteur(Controle
+        public void AjouteControleCoemprunteur(Controle
             controle)
         {
-            controlesCoemprunteur.Add(controle);
-            controle.directeur = this;
+            ControlesCoemprunteur.Add(controle);
+            controle.Directeur = this;
         }
 
-        public void controleModifie(Controle controle)
+        public void ControleModifie(Controle controle)
         {
-            if (controle == menuCoemprunteur) 
-                if (controle.valeur == "avec coemprunteur")
+            if (controle == MenuCoemprunteur) 
+                if (controle.Valeur == "avec coemprunteur")
                 {
                     foreach (Controle elementCoemprunteur in
-                        controlesCoemprunteur)
-                        elementCoemprunteur.saisie();
+                        ControlesCoemprunteur)
+                        elementCoemprunteur.Saisie();
                 }
-            if (controle == boutonOK)
+            if (controle == BoutonOk)
             {
-                enCours = false;
+                EnCours = false;
             }
         }
 
-        public void saisie()
+        public void Saisie()
         {
             while (true)
             {
-                foreach (Controle controle in controles)
+                foreach (Controle controle in Controles)
                 {
-                    controle.saisie();
-                    if (!enCours)
+                    controle.Saisie();
+                    if (!EnCours)
                         return ;
                 }
             }

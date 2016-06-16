@@ -4,21 +4,21 @@ namespace lp73.designPatterns.Multicast
 {
     public class DirectionGenerale
     {
-        protected ExpediteurGeneral expediteurGeneral = new
+        protected ExpediteurGeneral ExpediteurGeneral = new
             ExpediteurGeneral();
 
-        public void envoieMessages()
+        public void EnvoieMessages()
         {
             IList<string> contenu = new List<string>();
             contenu.Add("Informations générales");
             contenu.Add("Informations spécifiques");
             MessageGeneral message = new MessageGeneral(contenu);
-            expediteurGeneral.envoieMultiple(message);
+            ExpediteurGeneral.EnvoieMultiple(message);
         }
 
-        public void ajouteRecepteurGeneral(Employe recepteur)
+        public void AjouteRecepteurGeneral(Employe recepteur)
         {
-            expediteurGeneral.ajoute(recepteur);
+            ExpediteurGeneral.Ajoute(recepteur);
         }
     }
 }

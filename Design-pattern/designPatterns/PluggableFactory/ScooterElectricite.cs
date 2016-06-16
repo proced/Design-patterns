@@ -5,11 +5,11 @@ namespace lp73.designPatterns.PluggableFactory
     public class ScooterElectricite : Scooter
     {
 
-        public override void afficheCaracteristiques()
+        public override void AfficheCaracteristiques()
         {
             Console.WriteLine("Scooter électrique de modèle : "
-                              + modele + " de couleur : " + couleur +
-                              " de puissance : " + puissance);
+                              + Modele + " de couleur : " + Couleur +
+                              " de puissance : " + Puissance);
         }
     }
 }

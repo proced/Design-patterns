@@ -2,8 +2,8 @@ using System.Collections.Generic;
 
 namespace lp73.designPatterns.Strategy
 {
-    public interface DessinCatalogue
+    public interface IDessinCatalogue
     {
-        void dessine(IList<VueVehicule> contenu);
+        void Dessine(IList<VueVehicule> contenu);
     }
 }

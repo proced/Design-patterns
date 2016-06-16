@@ -5,36 +5,36 @@ namespace lp73.designPatterns.Memento
 {
     public class ChariotOption
     {
-        protected IList<OptionVehicule> options = 
+        protected IList<OptionVehicule> Options = 
             new List<OptionVehicule>();
 
-        public Memento ajouteOption(OptionVehicule
+        public IMemento AjouteOption(OptionVehicule
             optionVehicule)
         {
             MementoImpl resultat = new MementoImpl();
-            resultat.etat = options;
+            resultat.Etat = Options;
             IList<OptionVehicule> optionsIncompatibles =
-                optionVehicule.optionsIncompatibles;
+                optionVehicule.OptionsIncompatibles;
             foreach (OptionVehicule option in
                 optionsIncompatibles)
-                options.Remove(option);
-            options.Add(optionVehicule);
+                Options.Remove(option);
+            Options.Add(optionVehicule);
             return resultat;
         }
 
-        public void annule(Memento memento)
+        public void Annule(IMemento memento)
         {
             MementoImpl mementoImplInstance = memento as MementoImpl;
             if (mementoImplInstance == null)
                 return;
-            options = mementoImplInstance.etat;
+            Options = mementoImplInstance.Etat;
         }
 
-        public void affiche()
+        public void Affiche()
         {
             Console.WriteLine("Contenu du chariot des options");
-            foreach (OptionVehicule option in options)
-                option.affiche();
+            foreach (OptionVehicule option in Options)
+                option.Affiche();
             Console.WriteLine();
         }
     }

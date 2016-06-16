@@ -2,22 +2,22 @@ using System.Collections.Generic;
 
 namespace lp73.designPatterns.Memento
 {
-    public class MementoImpl : Memento
+    public class MementoImpl : IMemento
     {
-        protected IList<OptionVehicule> options = 
+        protected IList<OptionVehicule> Options = 
             new List<OptionVehicule>();
 
-        public IList<OptionVehicule> etat
+        public IList<OptionVehicule> Etat
         {
             get
             {
-                return options;
+                return Options;
             }
             set
             {
-                this.options.Clear();
+                this.Options.Clear();
                 foreach (OptionVehicule option in value)
-                    this.options.Add(option);
+                    this.Options.Add(option);
             }
         }
     }

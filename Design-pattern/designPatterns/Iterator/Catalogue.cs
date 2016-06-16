@@ -6,14 +6,14 @@ namespace lp73.designPatterns.Iterator
         where TElement : Element
         where TIterateur : Iterateur<TElement>, new()
     {
-        protected IList<TElement> contenu = 
+        protected IList<TElement> Contenu = 
             new List<TElement>();
 
-        public TIterateur recherche(string motCleRequete)
+        public TIterateur Recherche(string motCleRequete)
         {
             TIterateur resultat = new TIterateur();
-            resultat.motCleRequete = motCleRequete;
-            resultat.contenu = contenu;
+            resultat.MotCleRequete = motCleRequete;
+            resultat.Contenu = Contenu;
             return resultat;
         }
     }

@@ -4,18 +4,18 @@ namespace lp73.designPatterns.Reflective_Visitor
 {
     public class SocieteMere : Societe
     {
-        public IList<Societe> filiales {get; protected set;} 
+        public IList<Societe> Filiales {get; protected set;} 
 
         public SocieteMere(string nom, string email, string
             adresse)
             : base(nom, email, adresse)
         {
-            filiales = new List<Societe>();
+            Filiales = new List<Societe>();
         }
 
-        public override bool ajouteFiliale(Societe filiale)
+        public override bool AjouteFiliale(Societe filiale)
         {
-            filiales.Add(filiale);
+            Filiales.Add(filiale);
             return true;
         }
     }
