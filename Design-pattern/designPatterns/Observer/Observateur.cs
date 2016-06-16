@@ -1,4 +1,7 @@
-public interface Observateur
+namespace lp73.designPatterns.Observer
 {
-  void actualise();
+    public interface Observateur
+    {
+        void actualise();
+    }
 }

@@ -1,5 +1,8 @@
-﻿public class ExpediteurGeneral : ExpediteurAbstrait
- <MessageGeneral, RecepteurGeneral>
+﻿namespace lp73.designPatterns.Multicast
 {
+    public class ExpediteurGeneral : ExpediteurAbstrait
+        <MessageGeneral, RecepteurGeneral>
+    {
+    }
 }
 

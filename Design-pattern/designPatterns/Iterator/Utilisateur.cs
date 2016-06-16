@@ -1,20 +1,21 @@
-using System;
-
-public class Utilisateur
+namespace lp73.designPatterns.Iterator
 {
-  static void Main(string[] args)
-  {
-    CatalogueVehicule catalogue = new CatalogueVehicule();
-    IterateurVehicule iterateur = catalogue.recherche(
-      "bon marché");
-    Vehicule vehicule;
-    iterateur.debut();
-    vehicule = iterateur.item();
-    while (vehicule != null)
+    public class Utilisateur
     {
-      vehicule.affiche();
-      iterateur.suivant();
-      vehicule = iterateur.item();
+        //static void Main(string[] args)
+        //{
+        //    CatalogueVehicule catalogue = new CatalogueVehicule();
+        //    IterateurVehicule iterateur = catalogue.recherche(
+        //        "bon marché");
+        //    Vehicule vehicule;
+        //    iterateur.debut();
+        //    vehicule = iterateur.item();
+        //    while (vehicule != null)
+        //    {
+        //        vehicule.affiche();
+        //        iterateur.suivant();
+        //        vehicule = iterateur.item();
+        //    }
+        //}
     }
-  }
 }

@@ -1,30 +1,33 @@
 using System;
 
-public class AnimationProxy : Animation
+namespace lp73.designPatterns.Proxy
 {
-  protected Film film = null;
-  protected string photo = "affichage de la photo";
-
-  public void clic()
-  {
-    if (film == null)
+    public class AnimationProxy : Animation
     {
-      film = new Film();
-      film.charge();
+        protected Film film = null;
+        protected string photo = "affichage de la photo";
+
+        public void clic()
+        {
+            if (film == null)
+            {
+                film = new Film();
+                film.charge();
+            }
+            film.joue();
+        }
+
+        public void dessine()
+        {
+            if (film != null)
+                film.dessine();
+            else
+                dessine(photo);
+        }
+
+        public void dessine(string photo)
+        {
+            Console.WriteLine(photo);
+        }
     }
-    film.joue();
-  }
-
-  public void dessine()
-  {
-    if (film != null)
-      film.dessine();
-    else
-      dessine(photo);
-  }
-
-  public void dessine(string photo)
-  {
-    Console.WriteLine(photo);
-  }
 }

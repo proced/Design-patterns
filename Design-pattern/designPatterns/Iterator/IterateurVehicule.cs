@@ -1,3 +1,6 @@
-public class IterateurVehicule : Iterateur<Vehicule>
+namespace lp73.designPatterns.Iterator
 {
+    public class IterateurVehicule : Iterateur<Vehicule>
+    {
+    }
 }

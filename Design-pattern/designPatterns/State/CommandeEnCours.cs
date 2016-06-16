@@ -1,25 +1,28 @@
-public class CommandeEnCours : EtatCommande
+namespace lp73.designPatterns.State
 {
-  public CommandeEnCours(Commande commande) : base
-    (commande){}
+    public class CommandeEnCours : EtatCommande
+    {
+        public CommandeEnCours(Commande commande) : base
+            (commande){}
 
-  public override void ajouteProduit(Produit produit)
-  {
-    commande.Produits.Add(produit);
-  }
+        public override void ajouteProduit(Produit produit)
+        {
+            commande.Produits.Add(produit);
+        }
 
-  public override void efface()
-  {
-    commande.Produits.Clear();
-  }
+        public override void efface()
+        {
+            commande.Produits.Clear();
+        }
 
-  public override void retireProduit(Produit produit)
-  {
-    commande.Produits.Remove(produit);
-  }
+        public override void retireProduit(Produit produit)
+        {
+            commande.Produits.Remove(produit);
+        }
 
-  public override EtatCommande etatSuivant()
-  {
-    return new CommandeValidee(commande);
-  }
+        public override EtatCommande etatSuivant()
+        {
+            return new CommandeValidee(commande);
+        }
+    }
 }

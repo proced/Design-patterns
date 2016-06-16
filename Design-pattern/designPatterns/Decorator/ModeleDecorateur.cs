@@ -1,18 +1,21 @@
 using System;
 
-public class ModeleDecorateur : Decorateur
+namespace lp73.designPatterns.Decorator
 {
-  public ModeleDecorateur(ComposantGraphiqueVehicule
-    composant) : base(composant){}
+    public class ModeleDecorateur : Decorateur
+    {
+        public ModeleDecorateur(ComposantGraphiqueVehicule
+            composant) : base(composant){}
 
-  protected void afficheInfosTechniques()
-  {
-    Console.WriteLine("Informations techniques du modèle");
-  }
+        protected void afficheInfosTechniques()
+        {
+            Console.WriteLine("Informations techniques du modèle");
+        }
 
-  public override void affiche()
-  {
-    base.affiche();
-    this.afficheInfosTechniques();
-  }
+        public override void affiche()
+        {
+            base.affiche();
+            this.afficheInfosTechniques();
+        }
+    }
 }

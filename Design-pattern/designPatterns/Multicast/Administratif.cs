@@ -1,8 +1,11 @@
-﻿public class Administratif : Employe
+﻿namespace lp73.designPatterns.Multicast
 {
- public Administratif(string nom)
-  : base(nom)
- {
- }
+    public class Administratif : Employe
+    {
+        public Administratif(string nom)
+            : base(nom)
+        {
+        }
+    }
 }
 

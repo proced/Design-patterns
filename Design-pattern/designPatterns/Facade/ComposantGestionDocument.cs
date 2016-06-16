@@ -1,10 +1,11 @@
-using System;
-
-public class ComposantGestionDocument : GestionDocument
+namespace lp73.designPatterns.Facade
 {
+    public class ComposantGestionDocument : GestionDocument
+    {
 
-  public string document(int index)
-  {
-    return "Document numéro " + index;
-  }
+        public string document(int index)
+        {
+            return "Document numéro " + index;
+        }
+    }
 }

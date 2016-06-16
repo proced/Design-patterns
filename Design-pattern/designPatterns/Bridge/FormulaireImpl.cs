@@ -1,7 +1,8 @@
-using System;
-
-public interface FormulaireImpl
+namespace lp73.designPatterns.Bridge
 {
-  void dessineTexte(string texte);
-  string gereZoneSaisie();
+    public interface FormulaireImpl
+    {
+        void dessineTexte(string texte);
+        string gereZoneSaisie();
+    }
 }

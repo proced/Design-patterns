@@ -1,16 +1,19 @@
 using System;
 
-public class Produit
+namespace lp73.designPatterns.State
 {
-  protected string nom;
+    public class Produit
+    {
+        protected string nom;
 
-  public Produit(string nom)
-  {
-    this.nom = nom;
-  }
+        public Produit(string nom)
+        {
+            this.nom = nom;
+        }
 
-  public void affiche()
-  {
-    Console.WriteLine("Produit : " + nom);
-  }
+        public void affiche()
+        {
+            Console.WriteLine("Produit : " + nom);
+        }
+    }
 }

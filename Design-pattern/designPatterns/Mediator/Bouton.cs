@@ -1,15 +1,18 @@
 using System;
 
-public class Bouton : Controle
+namespace lp73.designPatterns.Mediator
 {
-  public Bouton(string nom) : base(nom){}
+    public class Bouton : Controle
+    {
+        public Bouton(string nom) : base(nom){}
 
-  public override void saisie()
-  {
-    Console.WriteLine("Désirez-vous activer le bouton " +
-      nom + " ?");
-    string reponse = Console.ReadLine();
-    if (reponse == "oui")
-      this.modifie();
-  }
+        public override void saisie()
+        {
+            Console.WriteLine("Désirez-vous activer le bouton " +
+                              nom + " ?");
+            string reponse = Console.ReadLine();
+            if (reponse == "oui")
+                this.modifie();
+        }
+    }
 }

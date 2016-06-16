@@ -1,7 +1,10 @@
-public class ClientCredit : Client
+namespace lp73.designPatterns.FactoryMethod
 {
-  protected override Commande creeCommande(double montant)
-  {
-    return new CommandeCredit(montant);
-  }
+    public class ClientCredit : Client
+    {
+        protected override Commande creeCommande(double montant)
+        {
+            return new CommandeCredit(montant);
+        }
+    }
 }

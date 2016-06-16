@@ -1,13 +1,14 @@
-using System;
-
-public class FormImmatriculationLuxembourg :
-  FormulaireImmatriculation
+namespace lp73.designPatterns.Bridge
 {
-  public FormImmatriculationLuxembourg(FormulaireImpl
-    implantation) : base(implantation){}
+    public class FormImmatriculationLuxembourg :
+        FormulaireImmatriculation
+    {
+        public FormImmatriculationLuxembourg(FormulaireImpl
+            implantation) : base(implantation){}
 
-  protected override bool controleSaisie(string plaque)
-  {
-    return plaque.Length == 5;
-  }
+        protected override bool controleSaisie(string plaque)
+        {
+            return plaque.Length == 5;
+        }
+    }
 }

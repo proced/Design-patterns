@@ -1,29 +1,30 @@
-using System;
-
-public class OperateurOu : OperateurBinaire
+namespace lp73.designPatterns.Interpreter
 {
-  public OperateurOu(Expression operandeGauche,
-    Expression operandeDroite) : base(operandeGauche,
-    operandeDroite){}
-
-  public override bool evalue(string description)
-  {
-    return operandeGauche.evalue(description) ||
-      operandeDroite.evalue(description);
-  }
-
-  // partie analyse syntaxique
-  public static new Expression parse()
-  {
-    Expression resultatGauche, resultatDroit;
-    resultatGauche = OperateurEt.parse();
-    while ((jeton != null) && (jeton == "ou"))
+    public class OperateurOu : OperateurBinaire
     {
-      prochainJeton();
-      resultatDroit = OperateurEt.parse();
-      resultatGauche = new OperateurOu(resultatGauche,
-        resultatDroit);
+        public OperateurOu(Expression operandeGauche,
+            Expression operandeDroite) : base(operandeGauche,
+                operandeDroite){}
+
+        public override bool evalue(string description)
+        {
+            return operandeGauche.evalue(description) ||
+                   operandeDroite.evalue(description);
+        }
+
+        // partie analyse syntaxique
+        public static new Expression parse()
+        {
+            Expression resultatGauche, resultatDroit;
+            resultatGauche = OperateurEt.parse();
+            while ((jeton != null) && (jeton == "ou"))
+            {
+                prochainJeton();
+                resultatDroit = OperateurEt.parse();
+                resultatGauche = new OperateurOu(resultatGauche,
+                    resultatDroit);
+            }
+            return resultatGauche;
+        }
     }
-    return resultatGauche;
-  }
 }

@@ -1,5 +1,8 @@
-public interface VisiteurSociete
+namespace lp73.designPatterns.Reflective_Visitor
 {
- void visite(SocieteSansFiliale societe);
- void visite(SocieteMere societe);
+    public interface VisiteurSociete
+    {
+        void visite(SocieteSansFiliale societe);
+        void visite(SocieteMere societe);
+    }
 }

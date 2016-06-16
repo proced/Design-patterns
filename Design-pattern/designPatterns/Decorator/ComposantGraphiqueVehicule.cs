@@ -1,4 +1,7 @@
-public interface ComposantGraphiqueVehicule
+namespace lp73.designPatterns.Decorator
 {
-  void affiche();
+    public interface ComposantGraphiqueVehicule
+    {
+        void affiche();
+    }
 }

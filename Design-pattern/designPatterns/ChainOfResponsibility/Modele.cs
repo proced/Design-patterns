@@ -1,24 +1,25 @@
-using System;
-
-public class Modele : ObjetBase
+namespace lp73.designPatterns.ChainOfResponsibility
 {
-  protected string laDescription;
-  protected string nom;
-
-  public Modele(string nom, string description)
-  {
-    this.laDescription = description;
-    this.nom = nom;
-  }
-
-  protected override string description
-  {
-   get
+    public class Modele : ObjetBase
     {
-     if (laDescription != null)
-      return "Modèle " + nom + " : " + laDescription;
-     else
-      return null;
+        protected string laDescription;
+        protected string nom;
+
+        public Modele(string nom, string description)
+        {
+            this.laDescription = description;
+            this.nom = nom;
+        }
+
+        protected override string description
+        {
+            get
+            {
+                if (laDescription != null)
+                    return "Modèle " + nom + " : " + laDescription;
+                else
+                    return null;
+            }
+        }
     }
-  }
 }

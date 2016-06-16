@@ -1,9 +1,12 @@
 using System;
 
-public class VueVehicule : ComposantGraphiqueVehicule
+namespace lp73.designPatterns.Decorator
 {
-  public void affiche()
-  {
-    Console.WriteLine("Affichage du véhicule");
-  }
+    public partial class VueVehicule : ComposantGraphiqueVehicule
+    {
+        public void affiche()
+        {
+            Console.WriteLine("Affichage du véhicule");
+        }
+    }
 }

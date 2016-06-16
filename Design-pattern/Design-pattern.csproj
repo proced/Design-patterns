@@ -7,7 +7,7 @@
     <ProjectGuid>{ADC74E60-1639-4D55-A2A0-691564FC2A05}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Design_pattern</RootNamespace>
+    <RootNamespace>lp73</RootNamespace>
     <AssemblyName>Design-pattern</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cedric\Cedric.cs" />
     <Compile Include="designPatterns\AbstractFactory\Automobile.cs" />
     <Compile Include="designPatterns\AbstractFactory\AutomobileElectricite.cs" />
     <Compile Include="designPatterns\AbstractFactory\AutomobileEssence.cs" />
@@ -205,6 +206,7 @@
     <Compile Include="designPatterns\Visitor\Utilisateur.cs" />
     <Compile Include="designPatterns\Visitor\Visiteur.cs" />
     <Compile Include="designPatterns\Visitor\VisiteurMailingCommercial.cs" />
+    <Compile Include="Maxime\Maxime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

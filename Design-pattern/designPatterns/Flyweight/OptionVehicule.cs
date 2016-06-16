@@ -1,24 +1,27 @@
 using System;
 
-public class OptionVehicule
+namespace lp73.designPatterns.Flyweight
 {
-  protected string nom;
-  protected string description;
-  protected int prixStandard;
+    public class OptionVehicule
+    {
+        protected string nom;
+        protected string description;
+        protected int prixStandard;
 
-  public OptionVehicule(string nom)
-  {
-    this.nom = nom;
-    this.description = "Description de " + nom;
-    this.prixStandard = 100;
-  }
+        public OptionVehicule(string nom)
+        {
+            this.nom = nom;
+            this.description = "Description de " + nom;
+            this.prixStandard = 100;
+        }
 
-  public void affiche(int prixDeVente)
-  {
-    Console.WriteLine("Option");
-    Console.WriteLine("Nom : " + nom);
-    Console.WriteLine(description);
-    Console.WriteLine("Prix standard : " + prixStandard);
-    Console.WriteLine("Prix de vente : " + prixDeVente);
-  }
+        public void affiche(int prixDeVente)
+        {
+            Console.WriteLine("Option");
+            Console.WriteLine("Nom : " + nom);
+            Console.WriteLine(description);
+            Console.WriteLine("Prix standard : " + prixStandard);
+            Console.WriteLine("Prix de vente : " + prixDeVente);
+        }
+    }
 }

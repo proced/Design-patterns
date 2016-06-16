@@ -1,31 +1,34 @@
 using System;
 
-public class VueVehicule : Observateur
+namespace lp73.designPatterns.Observer
 {
-  protected Vehicule vehicule;
-  protected string texte = "";
+    public partial class VueVehicule : Observateur
+    {
+        protected Vehicule vehicule;
+        protected string texte = "";
 
-  public VueVehicule(Vehicule vehicule)
-  {
-    this.vehicule = vehicule;
-    vehicule.ajoute(this);
-    metAJourTexte();
-  }
+        public VueVehicule(Vehicule vehicule)
+        {
+            this.vehicule = vehicule;
+            vehicule.ajoute(this);
+            metAJourTexte();
+        }
 
-  protected void metAJourTexte()
-  {
-    texte = "Description " + vehicule.description + 
-      " Prix : " + vehicule.prix;
-  }
+        protected void metAJourTexte()
+        {
+            texte = "Description " + vehicule.description + 
+                    " Prix : " + vehicule.prix;
+        }
 
-  public void actualise()
-  {
-    metAJourTexte();
-    this.redessine();
-  }
+        public void actualise()
+        {
+            metAJourTexte();
+            this.redessine();
+        }
 
-  public void redessine()
-  {
-    Console.WriteLine(texte);
-  }
+        public void redessine()
+        {
+            Console.WriteLine(texte);
+        }
+    }
 }

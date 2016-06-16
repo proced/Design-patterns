@@ -1,19 +1,20 @@
-using System;
-
-public class Vehicule : ObjetBase
+namespace lp73.designPatterns.ChainOfResponsibility
 {
-  protected string laDescription;
-
-  public Vehicule(string description)
-  {
-    this.laDescription = description;
-  }
-
-  protected override string description
-  {
-    get
+    public class Vehicule : ObjetBase
     {
-     return laDescription;
-    }   
-  }
+        protected string laDescription;
+
+        public Vehicule(string description)
+        {
+            this.laDescription = description;
+        }
+
+        protected override string description
+        {
+            get
+            {
+                return laDescription;
+            }   
+        }
+    }
 }

@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 
-public abstract class Liasse
+namespace lp73.designPatterns.Prototype
 {
-    public IList<Document> documents { get; protected set; }
+    public abstract class Liasse
+    {
+        public IList<Document> documents { get; protected set; }
+    }
 }

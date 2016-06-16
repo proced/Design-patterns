@@ -1,23 +1,24 @@
-using System;
-
-public class ClientVehicule
+namespace lp73.designPatterns.Builder
 {
-  static void Main(string[] args)
-  {
-    ConstructeurLiasseVehicule constructeur;
-    Console.WriteLine("Voulez-vous construire " +
-      "des liasses HTML (1) ou PDF (2) :");
-    string choix = Console.ReadLine();
-    if (choix == "1")
+    public class ClientVehicule
     {
-      constructeur = new ConstructeurLiasseVehiculeHtml();
+        //static void Main(string[] args)
+        //{
+        //    ConstructeurLiasseVehicule constructeur;
+        //    Console.WriteLine("Voulez-vous construire " +
+        //                      "des liasses HTML (1) ou PDF (2) :");
+        //    string choix = Console.ReadLine();
+        //    if (choix == "1")
+        //    {
+        //        constructeur = new ConstructeurLiasseVehiculeHtml();
+        //    }
+        //    else
+        //    {
+        //        constructeur = new ConstructeurLiasseVehiculePdf();
+        //    }
+        //    Vendeur vendeur = new Vendeur(constructeur);
+        //    Liasse liasse = vendeur.construit("Martin");
+        //    liasse.imprime();
+        //}
     }
-    else
-    {
-      constructeur = new ConstructeurLiasseVehiculePdf();
-    }
-    Vendeur vendeur = new Vendeur(constructeur);
-    Liasse liasse = vendeur.construit("Martin");
-    liasse.imprime();
-  }
 }

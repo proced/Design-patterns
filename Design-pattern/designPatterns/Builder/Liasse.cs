@@ -1,11 +1,13 @@
-using System;
 using System.Collections.Generic;
 
-public abstract class Liasse
+namespace lp73.designPatterns.Builder
 {
-  protected IList<string> contenu = 
-      new List<string>();
+    public abstract class Liasse
+    {
+        protected IList<string> contenu = 
+            new List<string>();
 
-  public abstract void ajouteDocument(string document);
-  public abstract void imprime();
+        public abstract void ajouteDocument(string document);
+        public abstract void imprime();
+    }
 }

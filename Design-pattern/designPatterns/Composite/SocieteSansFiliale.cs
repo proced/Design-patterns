@@ -1,14 +1,15 @@
-using System;
-
-public class SocieteSansFiliale : Societe
+namespace lp73.designPatterns.Composite
 {
-  public override bool ajouteFiliale(Societe filiale)
-  {
-    return false;
-  }
+    public class SocieteSansFiliale : Societe
+    {
+        public override bool ajouteFiliale(Societe filiale)
+        {
+            return false;
+        }
 
-  public override double calculeCoutEntretien()
-  {
-    return nbrVehicules * coutUnitVehicule;
-  }
+        public override double calculeCoutEntretien()
+        {
+            return nbrVehicules * coutUnitVehicule;
+        }
+    }
 }

@@ -1,15 +1,18 @@
 using System;
 
-public class FormHtmlImpl : FormulaireImpl
+namespace lp73.designPatterns.Bridge
 {
+    public class FormHtmlImpl : FormulaireImpl
+    {
 
-  public void dessineTexte(string texte)
-  {
-    Console.WriteLine("HTML : " + texte);
-  }
+        public void dessineTexte(string texte)
+        {
+            Console.WriteLine("HTML : " + texte);
+        }
 
-  public string gereZoneSaisie()
-  {
-    return Console.ReadLine();
-  }
+        public string gereZoneSaisie()
+        {
+            return Console.ReadLine();
+        }
+    }
 }

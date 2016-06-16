@@ -1,6 +1,7 @@
-using System;
-
-public interface GestionDocument
+namespace lp73.designPatterns.Facade
 {
-  string document(int index);
+    public interface GestionDocument
+    {
+        string document(int index);
+    }
 }

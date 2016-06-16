@@ -1,8 +1,9 @@
-using System;
-
-public interface Document
+namespace lp73.designPatterns.Adapter
 {
-  string contenu { set; }
-  void dessine();
-  void imprime();
+    public interface Document
+    {
+        string contenu { set; }
+        void dessine();
+        void imprime();
+    }
 }

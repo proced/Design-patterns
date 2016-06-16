@@ -1,10 +1,14 @@
-public class VueVehicule
+namespace lp73.designPatterns.Proxy
 {
-  static void Main(string[] args)
+    public partial class VueVehicule
+    {
+        /*static void Main(string[] args)
   {
     Animation animation = new AnimationProxy();
     animation.dessine();
     animation.clic();
     animation.dessine();
   }
+   * */
+    }
 }

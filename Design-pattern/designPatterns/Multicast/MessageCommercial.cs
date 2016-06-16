@@ -1,10 +1,13 @@
-﻿public class MessageCommercial : MessageAbstrait
+﻿namespace lp73.designPatterns.Multicast
 {
- public string contenu { get; protected set; }
+    public class MessageCommercial : MessageAbstrait
+    {
+        public string contenu { get; protected set; }
 
- public MessageCommercial(string contenu)
- {
-  this.contenu = contenu;
- }
+        public MessageCommercial(string contenu)
+        {
+            this.contenu = contenu;
+        }
+    }
 }
 

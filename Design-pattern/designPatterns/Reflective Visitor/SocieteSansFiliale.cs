@@ -1,12 +1,13 @@
-using System;
-
-public class SocieteSansFiliale : Societe
+namespace lp73.designPatterns.Reflective_Visitor
 {
- public SocieteSansFiliale(string nom, string email,
-  string adresse) : base(nom, email, adresse){}
+    public class SocieteSansFiliale : Societe
+    {
+        public SocieteSansFiliale(string nom, string email,
+            string adresse) : base(nom, email, adresse){}
 
- public override bool ajouteFiliale(Societe filiale)
- {
-  return false;
- }
+        public override bool ajouteFiliale(Societe filiale)
+        {
+            return false;
+        }
+    }
 }

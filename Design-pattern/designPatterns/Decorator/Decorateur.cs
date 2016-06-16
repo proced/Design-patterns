@@ -1,15 +1,18 @@
-public abstract class Decorateur :
-  ComposantGraphiqueVehicule
+namespace lp73.designPatterns.Decorator
 {
-  protected ComposantGraphiqueVehicule composant;
+    public abstract class Decorateur :
+        ComposantGraphiqueVehicule
+    {
+        protected ComposantGraphiqueVehicule composant;
 
-  public Decorateur(ComposantGraphiqueVehicule composant)
-  {
-    this.composant = composant;
-  }
+        public Decorateur(ComposantGraphiqueVehicule composant)
+        {
+            this.composant = composant;
+        }
 
-  public virtual void affiche()
-  {
-    composant.affiche();
-  }
+        public virtual void affiche()
+        {
+            composant.affiche();
+        }
+    }
 }

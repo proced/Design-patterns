@@ -1,16 +1,19 @@
 using System;
 
-public class VueVehicule
+namespace lp73.designPatterns.Strategy
 {
-  protected string description;
+    public partial class VueVehicule
+    {
+        protected string description;
 
-  public VueVehicule(string description)
-  {
-    this.description = description;
-  }
+        public VueVehicule(string description)
+        {
+            this.description = description;
+        }
 
-  public void dessine()
-  {
-    Console.Write(description);
-  }
+        public void dessine()
+        {
+            Console.Write(description);
+        }
+    }
 }

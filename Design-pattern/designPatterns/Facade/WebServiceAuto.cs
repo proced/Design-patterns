@@ -1,9 +1,11 @@
-using System;
 using System.Collections.Generic;
 
-public interface WebServiceAuto
+namespace lp73.designPatterns.Facade
 {
-  string document(int index);
-  IList<string> chercheVehicules(int prixMoyen, int
-    ecartMax);
+    public interface WebServiceAuto
+    {
+        string document(int index);
+        IList<string> chercheVehicules(int prixMoyen, int
+            ecartMax);
+    }
 }

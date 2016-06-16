@@ -1,20 +1,21 @@
-﻿using System;
-
-public abstract class Automobile
+﻿namespace lp73.designPatterns.PluggableFactory
 {
- public string modele { get; set; }
- public string couleur { get; set; }
- public int puissance { get; set; }
- public double espace { get; set; }
+    public abstract class Automobile
+    {
+        public string modele { get; set; }
+        public string couleur { get; set; }
+        public int puissance { get; set; }
+        public double espace { get; set; }
 
- public Automobile duplique()
- {
-  Automobile resultat;
-  resultat = (Automobile)this.MemberwiseClone();
-  return resultat;
- }
+        public Automobile duplique()
+        {
+            Automobile resultat;
+            resultat = (Automobile)this.MemberwiseClone();
+            return resultat;
+        }
 
- public abstract void afficheCaracteristiques();
+        public abstract void afficheCaracteristiques();
+    }
 }
 
 

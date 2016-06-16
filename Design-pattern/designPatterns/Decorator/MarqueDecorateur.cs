@@ -1,18 +1,21 @@
 using System;
 
-public class MarqueDecorateur : Decorateur
+namespace lp73.designPatterns.Decorator
 {
-  public MarqueDecorateur(ComposantGraphiqueVehicule
-    composant) : base(composant){}
+    public class MarqueDecorateur : Decorateur
+    {
+        public MarqueDecorateur(ComposantGraphiqueVehicule
+            composant) : base(composant){}
 
-  protected void afficheLogo()
-  {
-    Console.WriteLine("Logo de la marque");
-  }
+        protected void afficheLogo()
+        {
+            Console.WriteLine("Logo de la marque");
+        }
 
-  public override void affiche()
-  {
-    base.affiche();
-    this.afficheLogo();
-  }
+        public override void affiche()
+        {
+            base.affiche();
+            this.afficheLogo();
+        }
+    }
 }

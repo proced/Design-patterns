@@ -1,6 +1,9 @@
-﻿public class ExpediteurCommercial :
-  ExpediteurAbstrait<MessageCommercial,
-   RecepteurCommercial>
+﻿namespace lp73.designPatterns.Multicast
 {
+    public class ExpediteurCommercial :
+        ExpediteurAbstrait<MessageCommercial,
+            RecepteurCommercial>
+    {
+    }
 }
 

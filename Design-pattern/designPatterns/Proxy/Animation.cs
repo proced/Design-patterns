@@ -1,5 +1,8 @@
-public interface Animation
+namespace lp73.designPatterns.Proxy
 {
-  void dessine();
-  void clic();
+    public interface Animation
+    {
+        void dessine();
+        void clic();
+    }
 }

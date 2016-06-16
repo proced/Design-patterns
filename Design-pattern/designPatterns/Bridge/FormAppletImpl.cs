@@ -1,15 +1,18 @@
 using System;
 
-public class FormAppletImpl : FormulaireImpl
+namespace lp73.designPatterns.Bridge
 {
+    public class FormAppletImpl : FormulaireImpl
+    {
 
-  public void dessineTexte(string texte)
-  {
-    Console.WriteLine("Applet : " + texte);
-  }
+        public void dessineTexte(string texte)
+        {
+            Console.WriteLine("Applet : " + texte);
+        }
 
-  public string gereZoneSaisie()
-  {
-    return Console.ReadLine();
-  }
+        public string gereZoneSaisie()
+        {
+            return Console.ReadLine();
+        }
+    }
 }

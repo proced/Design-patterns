@@ -1,6 +1,9 @@
-﻿public interface RecepteurAbstrait<TMessage>
- where TMessage : MessageAbstrait
+﻿namespace lp73.designPatterns.Multicast
 {
- void recoit(TMessage message);
+    public interface RecepteurAbstrait<TMessage>
+        where TMessage : MessageAbstrait
+    {
+        void recoit(TMessage message);
+    }
 }
 

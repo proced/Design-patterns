@@ -1,16 +1,17 @@
-using System;
-
-public abstract class Element
+namespace lp73.designPatterns.Iterator
 {
-  protected string description;
+    public abstract class Element
+    {
+        protected string description;
 
-  public Element(string description)
-  {
-    this.description = description;
-  }
+        public Element(string description)
+        {
+            this.description = description;
+        }
 
-  public bool motCleValide(string motCle)
-  {
-    return description.IndexOf(motCle) !=  -1;
-  }
+        public bool motCleValide(string motCle)
+        {
+            return description.IndexOf(motCle) !=  -1;
+        }
+    }
 }
