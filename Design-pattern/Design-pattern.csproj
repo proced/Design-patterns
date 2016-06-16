@@ -52,7 +52,7 @@
     <Compile Include="designPatterns\AbstractFactory\ScooterElectricite.cs" />
     <Compile Include="designPatterns\AbstractFactory\ScooterEssence.cs" />
     <Compile Include="designPatterns\Adapter\ComposantPdf.cs" />
-    <Compile Include="designPatterns\Adapter\Document.cs" />
+    <Compile Include="designPatterns\Adapter\IDocument.cs" />
     <Compile Include="designPatterns\Adapter\DocumentHmtl.cs" />
     <Compile Include="designPatterns\Adapter\DocumentPdf.cs" />
     <Compile Include="designPatterns\Adapter\ServeurWeb.cs" />

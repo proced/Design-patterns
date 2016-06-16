@@ -4,32 +4,32 @@ namespace lp73.designPatterns.Adapter
 {
     public class ComposantPdf
     {
-        protected string contenu;
+        protected string Contenu;
 
-        public void pdfFixeContenu(string contenu)
+        public void PdfFixeContenu(string contenu)
         {
-            this.contenu = contenu;
+            this.Contenu = contenu;
         }
 
-        public void pdfPrepareAffichage()
+        public void PdfPrepareAffichage()
         {
             Console.WriteLine("Affichage PDF : Début");
         }
 
-        public void pdfRafraichit()
+        public void PdfRafraichit()
         {
             Console.WriteLine("Affichage contenu PDF : " +
-                              contenu);
+                              Contenu);
         }
 
-        public void pdfTermineAffichage()
+        public void PdfTermineAffichage()
         {
             Console.WriteLine("Affichage PDF : Fin");
         }
 
-        public void pdfEnvoieImprimante()
+        public void PdfEnvoieImprimante()
         {
-            Console.WriteLine("Impression PDF : " + contenu);
+            Console.WriteLine("Impression PDF : " + Contenu);
         }
     }
 }

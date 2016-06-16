@@ -2,32 +2,20 @@ using System;
 
 namespace lp73.designPatterns.Adapter
 {
-    public class DocumentHtml : Document
+    public class DocumentHtml : IDocument
     {
-        protected string _contenu;
+        public string Contenu { get; set; }
 
-        public string contenu
-        {
-            protected get
-            {
-                return _contenu;
-            }
-            set
-            {
-                _contenu = value;
-            }
-        }
-
-        public void dessine()
+        public void Dessine()
         {
             Console.WriteLine("Dessine document HTML : " +
-                              contenu);
+                              Contenu);
         }
 
-        public void imprime()
+        public void Imprime()
         {
             Console.WriteLine("Imprime document HTML : " +
-                              contenu);
+                              Contenu);
         }
 
     }

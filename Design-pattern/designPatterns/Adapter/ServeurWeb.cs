@@ -5,14 +5,13 @@ namespace lp73.designPatterns.Adapter
     {
         public static void NouveauxDocuments()
         {
-            Document document1, document2;
-            document1 = new DocumentHtml();
-            document1.contenu = "Hello";
-            document1.dessine();
+            IDocument document1 = new DocumentHtml();
+            document1.Contenu = "Hello";
+            document1.Dessine();
             Console.WriteLine();
-            document2 = new DocumentPdf();
-            document2.contenu = "Bonjour";
-            document2.dessine();
+            IDocument document2 = new DocumentPdf();
+            document2.Contenu = "Bonjour";
+            document2.Dessine();
         }
     }
 }

@@ -1,27 +1,27 @@
 namespace lp73.designPatterns.Adapter
 {
-    public class DocumentPdf : Document
+    public class DocumentPdf : IDocument
     {
-        protected ComposantPdf outilPdf = new ComposantPdf();
+        protected ComposantPdf OutilPdf = new ComposantPdf();
 
-        public string contenu
+        public string Contenu
         {
             set
             {
-                outilPdf.pdfFixeContenu(value);
+                OutilPdf.PdfFixeContenu(value);
             }
         }
 
-        public void dessine()
+        public void Dessine()
         {
-            outilPdf.pdfPrepareAffichage();
-            outilPdf.pdfRafraichit();
-            outilPdf.pdfTermineAffichage();
+            OutilPdf.PdfPrepareAffichage();
+            OutilPdf.PdfRafraichit();
+            OutilPdf.PdfTermineAffichage();
         }
 
-        public void imprime()
+        public void Imprime()
         {
-            outilPdf.pdfEnvoieImprimante();
+            OutilPdf.PdfEnvoieImprimante();
         }
     }
 }
