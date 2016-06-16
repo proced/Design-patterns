@@ -206,7 +206,6 @@
     <Compile Include="designPatterns\Visitor\Utilisateur.cs" />
     <Compile Include="designPatterns\Visitor\IVisiteur.cs" />
     <Compile Include="designPatterns\Visitor\VisiteurMailingCommercial.cs" />
-    <Compile Include="Maxime\Maxime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
