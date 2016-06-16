@@ -2,15 +2,15 @@ namespace lp73.designPatterns.FactoryMethod
 {
     public class Utilisateur
     {
-        //static void Main(string[] args)
-        //{
-        //    Client client;
-        //    client = new ClientComptant();
-        //    client.nouvelleCommande(2000.0);
-        //    client.nouvelleCommande(10000.0);
-        //    client = new ClientCredit();
-        //    client.nouvelleCommande(2000.0);
-        //    client.nouvelleCommande(10000.0);
-        //}
+        public static void NouveauClient()
+        {
+            Client client;
+            client = new ClientComptant();
+            client.nouvelleCommande(2000.0);
+            client.nouvelleCommande(10000.0);
+            client = new ClientCredit();
+            client.nouvelleCommande(2000.0);
+            client.nouvelleCommande(10000.0);
+        }
     }
 }
