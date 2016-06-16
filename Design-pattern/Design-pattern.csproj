@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cedric\Cedric.cs" />
     <Compile Include="designPatterns\AbstractFactory\Automobile.cs" />
     <Compile Include="designPatterns\AbstractFactory\AutomobileElectricite.cs" />
     <Compile Include="designPatterns\AbstractFactory\AutomobileEssence.cs" />
