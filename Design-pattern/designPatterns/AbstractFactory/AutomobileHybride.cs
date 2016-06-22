@@ -15,9 +15,9 @@ namespace lp73.designPatterns.AbstractFactory
         public override void AfficheCaracteristiques()
         {
             Console.WriteLine("Automobile hybride de modèle : "
-                              + modele + " de couleur : " + couleur + 
-                              " de puissance : " + puissance + " d'espace : " +
-                              espace);
+                              + Modele + " de couleur : " + Couleur + 
+                              " de puissance : " + Puissance + " d'espace : " +
+                              Espace);
         }
     }
 }

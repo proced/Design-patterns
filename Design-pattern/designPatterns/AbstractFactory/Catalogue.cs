@@ -9,8 +9,8 @@ namespace lp73.designPatterns.AbstractFactory
         public static void FabriqueVehicule()
         {
             AbstractFactory.IFabriqueVehicule fabrique;
-            Automobile[] autos = new Automobile[nbAutos];
-            Scooter[] scooters = new Scooter[nbScooters];
+            Automobile[] autos = new Automobile[NbAutos];
+            Scooter[] scooters = new Scooter[NbScooters];
             Console.WriteLine("Voulez-vous utiliser " +
                               "des v�hicules �lectriques (1), � essence (2) ou hybrides (3) :");
             string choix = Console.ReadLine();
@@ -26,10 +26,10 @@ namespace lp73.designPatterns.AbstractFactory
             {
                 fabrique = new FabriqueVehiculeHybride();
             }
-            for (int index = 0; index < nbAutos; index++)
+            for (int index = 0; index < NbAutos; index++)
                 autos[index] = fabrique.CreeAutomobile("standard",
                     "jaune", 6 + index, 3.2);
-            for (int index = 0; index < nbScooters; index++)
+            for (int index = 0; index < NbScooters; index++)
                 scooters[index] = fabrique.CreeScooter("classic",
                     "rouge", 2 + index);
             foreach (Automobile auto in autos)

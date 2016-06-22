@@ -160,14 +160,6 @@
     <Compile Include="designPatterns\Proxy\AnimationProxy.cs" />
     <Compile Include="designPatterns\Proxy\Film.cs" />
     <Compile Include="designPatterns\Proxy\VueVehicule.cs" />
-    <Compile Include="designPatterns\Reflective Visitor\Societe.cs" />
-    <Compile Include="designPatterns\Reflective Visitor\SocieteMere.cs" />
-    <Compile Include="designPatterns\Reflective Visitor\SocieteSansFiliale.cs" />
-    <Compile Include="designPatterns\Reflective Visitor\Utilisateur.cs" />
-    <Compile Include="designPatterns\Reflective Visitor\Visitable.cs" />
-    <Compile Include="designPatterns\Reflective Visitor\Visiteur.cs" />
-    <Compile Include="designPatterns\Reflective Visitor\VisiteurMailingCommercial.cs" />
-    <Compile Include="designPatterns\Reflective Visitor\VisiteurSociete.cs" />
     <Compile Include="designPatterns\Singleton\Comptable.cs" />
     <Compile Include="designPatterns\Singleton\TestVendeur.cs" />
     <Compile Include="designPatterns\Singleton\Vendeur.cs" />
