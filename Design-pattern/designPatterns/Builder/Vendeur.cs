@@ -2,19 +2,19 @@ namespace lp73.designPatterns.Builder
 {
     public class Vendeur
     {
-        protected ConstructeurLiasseVehicule constructeur;
+        protected ConstructeurLiasseVehicule Constructeur;
 
         public Vendeur(ConstructeurLiasseVehicule constructeur)
         {
-            this.constructeur = constructeur;
+            this.Constructeur = constructeur;
         }
 
-        public Liasse construit(string nomClient)
+        public Liasse Construit(string nomClient)
         {
-            constructeur.construitBonDeCommande(nomClient);
-            constructeur.construitDemandeImmatriculation
+            Constructeur.ConstruitBonDeCommande(nomClient);
+            Constructeur.ConstruitDemandeImmatriculation
                 (nomClient);
-            Liasse liasse = constructeur.resultat();
+            Liasse liasse = Constructeur.Resultat();
             return liasse;
         }
     }

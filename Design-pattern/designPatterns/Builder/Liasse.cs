@@ -4,10 +4,10 @@ namespace lp73.designPatterns.Builder
 {
     public abstract class Liasse
     {
-        protected IList<string> contenu = 
+        protected IList<string> Contenu = 
             new List<string>();
 
-        public abstract void ajouteDocument(string document);
-        public abstract void imprime();
+        public abstract void AjouteDocument(string document);
+        public abstract void Imprime();
     }
 }

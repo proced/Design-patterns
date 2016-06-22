@@ -2,15 +2,15 @@ namespace lp73.designPatterns.FactoryMethod
 {
     public abstract class Commande
     {
-        protected double montant;
+        protected double Montant;
 
         public Commande(double montant)
         {
-            this.montant = montant;
+            this.Montant = montant;
         }
 
-        public abstract bool valide();
+        public abstract bool Valide();
 
-        public abstract void paye();
+        public abstract void Paye();
     }
 }

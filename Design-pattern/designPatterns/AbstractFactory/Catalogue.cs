@@ -3,8 +3,8 @@ namespace lp73.designPatterns.AbstractFactory
 {
     public class Catalogue
     {
-        public static int nbAutos = 3;
-        public static int nbScooters = 2;
+        public static int NbAutos = 3;
+        public static int NbScooters = 2;
 
         public static void FabriqueVehicule()
         {
@@ -12,7 +12,7 @@ namespace lp73.designPatterns.AbstractFactory
             Automobile[] autos = new Automobile[nbAutos];
             Scooter[] scooters = new Scooter[nbScooters];
             Console.WriteLine("Voulez-vous utiliser " +
-                              "des véhicules électriques (1), à essence (2) ou hybrides (3) :");
+                              "des vï¿½hicules ï¿½lectriques (1), ï¿½ essence (2) ou hybrides (3) :");
             string choix = Console.ReadLine();
             if (choix == "1")
             {

@@ -6,16 +6,16 @@ namespace lp73.designPatterns.FactoryMethod
     {
         public CommandeCredit(double montant) : base(montant){}
 
-        public override void paye()
+        public override void Paye()
         {
             Console.WriteLine(
                 "Le paiement de la commande au crédit de : " +
-                montant + " est effectué.");
+                Montant + " est effectué.");
         }
 
-        public override bool valide()
+        public override bool Valide()
         {
-            return (montant >= 1000.0) && (montant <= 5000.0);
+            return (Montant >= 1000.0) && (Montant <= 5000.0);
         }
     }
 }

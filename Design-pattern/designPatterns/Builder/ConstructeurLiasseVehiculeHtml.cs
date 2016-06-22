@@ -5,26 +5,26 @@ namespace lp73.designPatterns.Builder
     {
         public ConstructeurLiasseVehiculeHtml()
         {
-            liasse = new LiasseHtml();
+            Liasse = new LiasseHtml();
         }
 
-        public override void construitBonDeCommande(string
+        public override void ConstruitBonDeCommande(string
             nomClient)
         {
             string document;
             document = "<HTML>Bon de commande Client : " +
                        nomClient + "</HTML>";
-            liasse.ajouteDocument(document);
+            Liasse.AjouteDocument(document);
         }
 
-        public override void construitDemandeImmatriculation
+        public override void ConstruitDemandeImmatriculation
             (string nomDemandeur)
         {
             string document;
             document = 
                 "<HTML>Demande d'immatriculation Demandeur : " +
                 nomDemandeur + "</HTML>";
-            liasse.ajouteDocument(document);
+            Liasse.AjouteDocument(document);
         }
     }
 }

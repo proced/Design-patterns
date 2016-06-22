@@ -2,15 +2,15 @@ using System;
 
 namespace lp73.designPatterns.Bridge
 {
-    public class FormHtmlImpl : FormulaireImpl
+    public class FormHtmlImpl : IFormulaireImpl
     {
 
-        public void dessineTexte(string texte)
+        public void DessineTexte(string texte)
         {
             Console.WriteLine("HTML : " + texte);
         }
 
-        public string gereZoneSaisie()
+        public string GereZoneSaisie()
         {
             return Console.ReadLine();
         }

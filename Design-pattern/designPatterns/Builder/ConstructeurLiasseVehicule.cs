@@ -2,17 +2,17 @@ namespace lp73.designPatterns.Builder
 {
     public abstract class ConstructeurLiasseVehicule
     {
-        protected Liasse liasse;
+        protected Liasse Liasse;
 
-        public abstract void construitBonDeCommande(string
+        public abstract void ConstruitBonDeCommande(string
             nomClient);
 
-        public abstract void construitDemandeImmatriculation
+        public abstract void ConstruitDemandeImmatriculation
             (string nomDemandeur);
 
-        public Liasse resultat()
+        public Liasse Resultat()
         {
-            return liasse;
+            return Liasse;
         }
     }
 }

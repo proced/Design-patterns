@@ -1,13 +1,17 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace lp73.designPatterns.Bridge
 {
-    public class FormAppletImpl : IFormulaireImpl
+    class FormDocImpl  : IFormulaireImpl
     {
 
         public void DessineTexte(string texte)
         {
-            Console.WriteLine("Applet : " + texte);
+            Console.WriteLine("DOC : " + texte);
         }
 
         public string GereZoneSaisie()

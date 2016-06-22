@@ -6,11 +6,14 @@ namespace lp73.designPatterns.FactoryMethod
         {
             Client client;
             client = new ClientComptant();
-            client.nouvelleCommande(2000.0);
-            client.nouvelleCommande(10000.0);
+            client.NouvelleCommande(2000.0);
+            client.NouvelleCommande(10000.0);
             client = new ClientCredit();
-            client.nouvelleCommande(2000.0);
-            client.nouvelleCommande(10000.0);
+            client.NouvelleCommande(2000.0);
+            client.NouvelleCommande(10000.0);
+            client = new ClientDifferee();
+            client.NouvelleCommande(2000);
+            client.NouvelleCommande(10000);
         }
     }
 }

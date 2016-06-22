@@ -6,14 +6,14 @@ namespace lp73.designPatterns.FactoryMethod
     {
         public CommandeComptant(double montant) : base(montant){}
 
-        public override void paye()
+        public override void Paye()
         {
             Console.WriteLine(
                 "Le paiement de la commande au comptant de : " +
-                montant + " est effectué.");
+                Montant + " est effectué.");
         }
 
-        public override bool valide()
+        public override bool Valide()
         {
             return true;
         }

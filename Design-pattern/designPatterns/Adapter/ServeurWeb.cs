@@ -12,6 +12,10 @@ namespace lp73.designPatterns.Adapter
             IDocument document2 = new DocumentPdf();
             document2.Contenu = "Bonjour";
             document2.Dessine();
+            Console.WriteLine();
+            IDocument document3 = new DocumentXml();
+            document3.Contenu = "xml";
+            document3.Dessine();
         }
     }
 }
