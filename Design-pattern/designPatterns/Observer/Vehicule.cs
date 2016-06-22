@@ -14,7 +14,7 @@ namespace lp73.designPatterns.Observer
             set
             {
                 _description = value;
-                this.notifie();
+                this.Notifie();
             }
         }
 
@@ -27,7 +27,7 @@ namespace lp73.designPatterns.Observer
             set
             {
                 _prix = value;
-                this.notifie();
+                this.Notifie();
             }
         }
 

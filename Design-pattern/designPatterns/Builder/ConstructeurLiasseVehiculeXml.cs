@@ -1,19 +1,19 @@
-namespace lp73.designPatterns.Builder
+﻿namespace lp73.designPatterns.Builder
 {
-    public class ConstructeurLiasseVehiculePdf :
+    public class ConstructeurLiasseVehiculeXml:
         ConstructeurLiasseVehicule
     {
-        public ConstructeurLiasseVehiculePdf()
+        public ConstructeurLiasseVehiculeXml()
         {
-            Liasse = new LiassePdf();
+            Liasse = new LiasseXml();
         }
 
         public override void ConstruitBonDeCommande(string
             nomClient)
         {
             string document;
-            document = "<PDF>Bon de commande Client : " +
-                       nomClient + "</PDF>";
+            document = "<XML>Bon de commande Client : " +
+                       nomClient + "</XML>";
             Liasse.AjouteDocument(document);
         }
 
@@ -22,8 +22,8 @@ namespace lp73.designPatterns.Builder
         {
             string document;
             document = 
-                "<PDF>Demande d'immatriculation Demandeur : " +
-                nomDemandeur + "</PDF>";
+                "<XML>Demande d'immatriculation Demandeur : " +
+                nomDemandeur + "</XML>";
             Liasse.AjouteDocument(document);
         }
     }

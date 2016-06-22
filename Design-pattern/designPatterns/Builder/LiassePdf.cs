@@ -4,16 +4,16 @@ namespace lp73.designPatterns.Builder
 {
     public class LiassePdf : Liasse
     {
-        public override void ajouteDocument(string document)
+        public override void AjouteDocument(string document)
         {
             if (document.StartsWith("<PDF>"))
-                contenu.Add(document);
+                Contenu.Add(document);
         }
 
-        public override void imprime()
+        public override void Imprime()
         {
             Console.WriteLine("Liasse PDF");
-            foreach (string s in contenu)
+            foreach (string s in Contenu)
                 Console.WriteLine(s);
         }
     }

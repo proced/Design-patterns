@@ -3,14 +3,14 @@ namespace lp73.designPatterns.AbstractFactory
 {
     public class Catalogue
     {
-        public static int nbAutos = 3;
-        public static int nbScooters = 2;
+        public static int NbAutos = 3;
+        public static int NbScooters = 2;
 
         public static void FabriqueVehicule()
         {
-            FabriqueVehicule fabrique;
-            Automobile[] autos = new Automobile[nbAutos];
-            Scooter[] scooters = new Scooter[nbScooters];
+            IFabriqueVehicule fabrique;
+            Automobile[] autos = new Automobile[NbAutos];
+            Scooter[] scooters = new Scooter[NbScooters];
             Console.WriteLine("Voulez-vous utiliser " +
                               "des véhicules électriques (1) ou à essence (2) :");
             string choix = Console.ReadLine();
@@ -22,16 +22,16 @@ namespace lp73.designPatterns.AbstractFactory
             {
                 fabrique = new FabriqueVehiculeEssence();
             }
-            for (int index = 0; index < nbAutos; index++)
-                autos[index] = fabrique.creeAutomobile("standard",
+            for (int index = 0; index < NbAutos; index++)
+                autos[index] = fabrique.CreeAutomobile("standard",
                     "jaune", 6 + index, 3.2);
-            for (int index = 0; index < nbScooters; index++)
-                scooters[index] = fabrique.creeScooter("classic",
+            for (int index = 0; index < NbScooters; index++)
+                scooters[index] = fabrique.CreeScooter("classic",
                     "rouge", 2 + index);
             foreach (Automobile auto in autos)
-                auto.afficheCaracteristiques();
+                auto.AfficheCaracteristiques();
             foreach (Scooter scooter in scooters)
-                scooter.afficheCaracteristiques();
+                scooter.AfficheCaracteristiques();
         }
 
     }

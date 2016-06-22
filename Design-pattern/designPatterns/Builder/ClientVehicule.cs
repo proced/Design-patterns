@@ -7,19 +7,23 @@ namespace lp73.designPatterns.Builder
         {
             ConstructeurLiasseVehicule constructeur;
             Console.WriteLine("Voulez-vous construire " +
-                              "des liasses HTML (1) ou PDF (2) :");
+                              "des liasses HTML (1) ou PDF (2) ou XML (3):");
             string choix = Console.ReadLine();
             if (choix == "1")
             {
                 constructeur = new ConstructeurLiasseVehiculeHtml();
             }
-            else
+            else if(choix =="2")
             {
                 constructeur = new ConstructeurLiasseVehiculePdf();
             }
+            else
+            {
+                constructeur = new ConstructeurLiasseVehiculeXml();
+            }
             Vendeur vendeur = new Vendeur(constructeur);
-            Liasse liasse = vendeur.construit("Martin");
-            liasse.imprime();
+            Liasse liasse = vendeur.Construit("Martin");
+            liasse.Imprime();
         }
     }
 }

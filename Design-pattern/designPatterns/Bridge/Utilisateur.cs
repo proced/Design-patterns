@@ -7,15 +7,20 @@ namespace lp73.designPatterns.Bridge
         {
             FormImmatriculationLuxembourg formulaire1 = new
                 FormImmatriculationLuxembourg(new FormHtmlImpl());
-            formulaire1.affiche();
-            if (formulaire1.gereSaisie())
-                formulaire1.genereDocument();
+            formulaire1.Affiche();
+            if (formulaire1.GereSaisie())
+                formulaire1.GenereDocument();
             Console.WriteLine();
             FormImmatriculationFrance formulaire2 = new
                 FormImmatriculationFrance(new FormAppletImpl());
-            formulaire2.affiche();
-            if (formulaire2.gereSaisie())
-                formulaire2.genereDocument();
+            formulaire2.Affiche();
+            if (formulaire2.GereSaisie())
+                formulaire2.GenereDocument();
+
+            FormImmatriculationFrance formulaire3 = new FormImmatriculationFrance(new FormDocImpl());
+            formulaire3.Affiche();
+            if (formulaire3.GereSaisie())
+                formulaire3.GenereDocument();
         }
     }
 }

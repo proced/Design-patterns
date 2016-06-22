@@ -2,34 +2,34 @@ namespace lp73.designPatterns.Bridge
 {
     public abstract class FormulaireImmatriculation
     {
-        protected string contenu;
-        protected FormulaireImpl implantation;
+        protected string Contenu;
+        protected IFormulaireImpl Implantation;
 
-        public FormulaireImmatriculation(FormulaireImpl
+        public FormulaireImmatriculation(IFormulaireImpl
             implantation)
         {
-            this.implantation = implantation;
+            this.Implantation = implantation;
         }
 
-        public void affiche()
+        public void Affiche()
         {
-            implantation.dessineTexte(
+            Implantation.DessineTexte(
                 "numéro de la plaque existante : ");
         }
 
-        public void genereDocument()
+        public void GenereDocument()
         {
-            implantation.dessineTexte("Demande d'immatriculation");
-            implantation.dessineTexte("numéro de plaque : " +
-                                      contenu);
+            Implantation.DessineTexte("Demande d'immatriculation");
+            Implantation.DessineTexte("numéro de plaque : " +
+                                      Contenu);
         }
 
-        public bool gereSaisie()
+        public bool GereSaisie()
         {
-            contenu = implantation.gereZoneSaisie();
-            return this.controleSaisie(contenu);
+            Contenu = Implantation.GereZoneSaisie();
+            return this.ControleSaisie(Contenu);
         }
 
-        protected abstract bool controleSaisie(string plaque);
+        protected abstract bool ControleSaisie(string plaque);
     }
 }

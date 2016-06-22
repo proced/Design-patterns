@@ -1,7 +1,7 @@
 namespace lp73.designPatterns.Observer
 {
-    public interface Observateur
+    public interface IObservateur
     {
-        void actualise();
+        void Actualise();
     }
 }

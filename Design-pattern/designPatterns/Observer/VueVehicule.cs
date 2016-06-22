@@ -2,7 +2,7 @@ using System;
 
 namespace lp73.designPatterns.Observer
 {
-    public partial class VueVehicule : Observateur
+    public partial class VueVehicule : IObservateur
     {
         protected Vehicule Vehicule;
         protected string Texte = "";
@@ -20,7 +20,7 @@ namespace lp73.designPatterns.Observer
                     " Prix : " + Vehicule.Prix;
         }
 
-        public void actualise()
+        public void Actualise()
         {
             MetAJourTexte();
             this.Redessine();

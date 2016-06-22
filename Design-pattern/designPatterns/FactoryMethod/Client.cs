@@ -4,18 +4,18 @@ namespace lp73.designPatterns.FactoryMethod
 {
     public abstract class Client
     {
-        protected IList<Commande> commandes = 
+        protected IList<Commande> Commandes = 
             new List<Commande>();
 
-        protected abstract Commande creeCommande(double montant);
+        protected abstract Commande CreeCommande(double montant);
 
-        public void nouvelleCommande(double montant)
+        public void NouvelleCommande(double montant)
         {
-            Commande commande = this.creeCommande(montant);
-            if (commande.valide())
+            Commande commande = this.CreeCommande(montant);
+            if (commande.Valide())
             {
-                commande.paye();
-                commandes.Add(commande);
+                commande.Paye();
+                Commandes.Add(commande);
             }
         }
     }

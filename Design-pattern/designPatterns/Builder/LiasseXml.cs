@@ -1,18 +1,18 @@
-using System;
+﻿using System;
 
 namespace lp73.designPatterns.Builder
 {
-    public class LiasseHtml : Liasse
+    public class LiasseXml : Liasse
     {
         public override void AjouteDocument(string document)
         {
-            if (document.StartsWith("<HTML>"))
+            if (document.StartsWith("<XML>"))
                 Contenu.Add(document);
         }
 
         public override void Imprime()
         {
-            Console.WriteLine("Liasse HTML");
+            Console.WriteLine("Liasse XML");
             foreach (string s in Contenu)
                 Console.WriteLine(s);
         }

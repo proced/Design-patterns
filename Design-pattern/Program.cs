@@ -100,7 +100,7 @@ namespace lp73
                         break;
                     case "16":
                         // Multicast
-                        designPatterns.Multicast.Concession.Multicast();
+                       // designPatterns.Multicast.Concession.Multicast();
                         break;
                     case "17":
                         // Observer
@@ -108,7 +108,7 @@ namespace lp73
                         break;
                     case "18":
                         // PluggableFactory
-                        designPatterns.PluggableFactory.Utilisateur.PluggableFactory();
+                    //    designPatterns.PluggableFactory.Utilisateur.PluggableFactory();
                         break;
                     case "19":
                         // Prototype
@@ -120,7 +120,7 @@ namespace lp73
                         break;
                     case "21":
                         // Reflective visitor
-                        designPatterns.Reflective_Visitor.Utilisateur.ReflectiveVisitor();
+                    //    designPatterns.Reflective_Visitor.Utilisateur.ReflectiveVisitor();
                         break;
                     case "22":
                         // Singleton
