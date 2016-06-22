@@ -8,7 +8,7 @@ namespace lp73.designPatterns.AbstractFactory
             couleur, int puissance, double espace) : base(modele,
                 couleur, puissance, espace){}
 
-        public override void afficheCaracteristiques()
+        public override void AfficheCaracteristiques()
         {
             Console.WriteLine(
                 "Automobile électrique de modèle : " + modele + 

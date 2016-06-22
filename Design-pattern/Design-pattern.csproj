@@ -44,13 +44,16 @@
     <Compile Include="designPatterns\AbstractFactory\Automobile.cs" />
     <Compile Include="designPatterns\AbstractFactory\AutomobileElectricite.cs" />
     <Compile Include="designPatterns\AbstractFactory\AutomobileEssence.cs" />
+    <Compile Include="designPatterns\AbstractFactory\AutomobileHybride.cs" />
     <Compile Include="designPatterns\AbstractFactory\Catalogue.cs" />
     <Compile Include="designPatterns\AbstractFactory\FabriqueVehicule.cs" />
     <Compile Include="designPatterns\AbstractFactory\FabriqueVehiculeElectricite.cs" />
     <Compile Include="designPatterns\AbstractFactory\FabriqueVehiculeEssence.cs" />
+    <Compile Include="designPatterns\AbstractFactory\FabriqueVehiculeHybride.cs" />
     <Compile Include="designPatterns\AbstractFactory\Scooter.cs" />
     <Compile Include="designPatterns\AbstractFactory\ScooterElectricite.cs" />
     <Compile Include="designPatterns\AbstractFactory\ScooterEssence.cs" />
+    <Compile Include="designPatterns\AbstractFactory\ScooterHybride.cs" />
     <Compile Include="designPatterns\Adapter\ComposantPdf.cs" />
     <Compile Include="designPatterns\Adapter\IDocument.cs" />
     <Compile Include="designPatterns\Adapter\DocumentHmtl.cs" />
@@ -88,6 +91,7 @@
     <Compile Include="designPatterns\Decorator\Decorateur.cs" />
     <Compile Include="designPatterns\Decorator\MarqueDecorateur.cs" />
     <Compile Include="designPatterns\Decorator\ModeleDecorateur.cs" />
+    <Compile Include="designPatterns\Decorator\OptionsDecorateur.cs" />
     <Compile Include="designPatterns\Decorator\VueCatalogue.cs" />
     <Compile Include="designPatterns\Decorator\VueVehicule.cs" />
     <Compile Include="designPatterns\Facade\Catalogue.cs" />
@@ -164,6 +168,7 @@
     <Compile Include="designPatterns\Prototype\CertificatCession.cs" />
     <Compile Include="designPatterns\Prototype\DemandeImmatriculation.cs" />
     <Compile Include="designPatterns\Prototype\Document.cs" />
+    <Compile Include="designPatterns\Prototype\Facture.cs" />
     <Compile Include="designPatterns\Prototype\Liasse.cs" />
     <Compile Include="designPatterns\Prototype\LiasseClient.cs" />
     <Compile Include="designPatterns\Prototype\LiasseVierge.cs" />
@@ -180,6 +185,7 @@
     <Compile Include="designPatterns\Reflective Visitor\Visiteur.cs" />
     <Compile Include="designPatterns\Reflective Visitor\VisiteurMailingCommercial.cs" />
     <Compile Include="designPatterns\Reflective Visitor\VisiteurSociete.cs" />
+    <Compile Include="designPatterns\Singleton\Comptable.cs" />
     <Compile Include="designPatterns\Singleton\TestVendeur.cs" />
     <Compile Include="designPatterns\Singleton\Vendeur.cs" />
     <Compile Include="designPatterns\State\Commande.cs" />

@@ -8,7 +8,9 @@ namespace lp73.designPatterns.Decorator
             ModeleDecorateur modeleDecorateur = new ModeleDecorateur((ComposantGraphiqueVehicule)vueVehicule);
             MarqueDecorateur marqueDecorateur = new
                 MarqueDecorateur(modeleDecorateur);
-            marqueDecorateur.affiche();
+            OptionsDecorateur optionsDecorateur = new
+                OptionsDecorateur(marqueDecorateur);
+            optionsDecorateur.affiche();
         }
     }
 }

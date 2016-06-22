@@ -1,21 +1,25 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace lp73.designPatterns.Singleton
 {
-    public class Vendeur
-    {
+    class Comptable
+   {
         public string Nom { get; set; }
         public string Adresse { get; set; }
         public string Email { get; set; }
 
-        private static Vendeur _instance = null;
+        private static Comptable _instance = null;
 
-        private Vendeur(){}
+        private Comptable() { }
 
-        public static Vendeur Instance()
+        public static Comptable Instance()
         {
             if (_instance == null)
-                _instance = new Vendeur();
+                _instance = new Comptable();
             return _instance;
         }
 
@@ -24,7 +28,7 @@ namespace lp73.designPatterns.Singleton
             Console.WriteLine("Nom : " + Nom);
             Console.WriteLine("Adresse : " + Adresse);
             Console.WriteLine("Email : " + Email);
-            Console.WriteLine("Poste : Vendeur");
+            Console.WriteLine("Poste : Comtable");
         }
 
     }
