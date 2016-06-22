@@ -2,17 +2,17 @@ namespace lp73.designPatterns.AbstractFactory
 {
     public abstract class Scooter
     {
-        protected string modele;
-        protected string couleur;
-        protected int puissance;
+        protected string Modele;
+        protected string Couleur;
+        protected int Puissance;
 
         public Scooter(string modele, string couleur, int
             puissance)
         {
-            this.modele = modele;
-            this.couleur = couleur;
-            this.puissance = puissance;
+            this.Modele = modele;
+            this.Couleur = couleur;
+            this.Puissance = puissance;
         }
-        public abstract void afficheCaracteristiques();
+        public abstract void AfficheCaracteristiques();
     }
 }

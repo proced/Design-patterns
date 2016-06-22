@@ -1,11 +1,11 @@
 namespace lp73.designPatterns.AbstractFactory
 {
-    public interface FabriqueVehicule
+    public interface IFabriqueVehicule
     {
-        Automobile creeAutomobile(string modele, string couleur,
+        Automobile CreeAutomobile(string modele, string couleur,
             int puissance, double espace);
 
-        Scooter creeScooter(string modele, string couleur, int
+        Scooter CreeScooter(string modele, string couleur, int
             puissance);
     }
 }

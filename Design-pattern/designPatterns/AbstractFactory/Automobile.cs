@@ -7,7 +7,7 @@ namespace lp73.designPatterns.AbstractFactory
         protected int puissance;
         protected double espace;
 
-        public Automobile(string modele, string couleur, int
+        protected Automobile(string modele, string couleur, int
             puissance, double espace)
         {
             this.modele = modele;
@@ -16,6 +16,6 @@ namespace lp73.designPatterns.AbstractFactory
             this.espace = espace;
         }
 
-        public abstract void afficheCaracteristiques();
+        public abstract void AfficheCaracteristiques();
     }
 }
